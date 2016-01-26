@@ -19,16 +19,19 @@
         <div class="cart">
           <a href="#">Корзина</a>
         </div>
+        <div>Добро пожаловать в магазин готовых макетов</div>
       </div>
     </header>
     <main>
-    <div>Добро пожаловать в магазин готовых макетов</div>
     <section class="shop">
       <form>
         <fieldset class="range">
           <legend>Стоимость:</legend>
           <input type="range" min="0" max="15000" step="1000">
-          от <input type="text" value="0"> до <input type="text" value="15000">
+          <label for="min-range">от</label>
+          <input type="text" value="0" id="min-range"> 
+          <label for="max-range">до</label>
+          <input type="text" value="15000" id="max-range">
         </fieldset>
         <fieldset class="grid">
           <legend>Сетка:</legend>
@@ -68,13 +71,13 @@
             <a href="#" class="down"></a>
             <a href="#" class="up"></a>
           </div>
-        </div>
-        <a href="#"><img class="example" src="http://placehold.it/200x200" width="200" height="200" alt="site-scr"></a>
-        <a href="#"><img class="example" src="http://placehold.it/200x200" width="200" height="200" alt="site-scr"></a>
-        <a href="#"><img class="example" src="http://placehold.it/200x200" width="200" height="200" alt="site-scr"></a>
-        <a href="#"><img class="example" src="http://placehold.it/200x200" width="200" height="200" alt="site-scr"></a>
-        <a href="#"><img class="example" src="http://placehold.it/200x200" width="200" height="200" alt="site-scr"></a>
-        <a href="#"><img class="example" src="http://placehold.it/200x200" width="200" height="200" alt="site-scr"></a>
+        </div class="examples">
+        <a href="#"><img src="http://placehold.it/200x200" width="200" height="200" alt="site-scr"></a>
+        <a href="#"><img src="http://placehold.it/200x200" width="200" height="200" alt="site-scr"></a>
+        <a href="#"><img src="http://placehold.it/200x200" width="200" height="200" alt="site-scr"></a>
+        <a href="#"><img src="http://placehold.it/200x200" width="200" height="200" alt="site-scr"></a>
+        <a href="#"><img src="http://placehold.it/200x200" width="200" height="200" alt="site-scr"></a>
+        <a href="#"><img src="http://placehold.it/200x200" width="200" height="200" alt="site-scr"></a>
         <nav class="paginator">
           <ul>
             <li><a class="btn prev" href="#"></a>Предыдущая</li>
@@ -89,7 +92,9 @@
     </main>
     <footer>
       <section class="map">
-        <img src="http://placehold.it/800x300" width="100%" height="300" alt="map">
+        <div width="100%">
+          <img src="http://placehold.it/1200x300" width="1200" height="300" alt="map">
+        </div>
         <article class="contacts">
           <h3>NЁRDS DESIGN STUDIO</h3>
           191186, Санкт-Петербург, <br>
@@ -100,7 +105,6 @@
         <img src="http://placehold.it/100x400" width="100" height="100" alt="logo">
       </section>
       <section class="footer-social">
-          <p>Давайте дружить!</p>
           <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
           <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
           <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
