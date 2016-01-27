@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>NЁRDS DESIGN STUDIO</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
   	<header class="main-header">
       <div class="container">
-        <img class="main-logo" src="http://placehold.it/200x200" width="200" height="200" alt="main-logo">
+        <img class="main-logo" src="img/main-logo.svg" width="139" height="56" alt="main-logo">
         <nav class="main-navigation">
           <ul>
             <li><a href="#">Студия</a></li>
@@ -19,12 +20,12 @@
         <div class="cart">
           <a href="#">Корзина</a>
         </div>
-        <div>Добро пожаловать в магазин готовых макетов</div>
+        <div class="shop-header">Добро пожаловать в магазин готовых макетов</div>
       </div>
     </header>
     <main>
     <section class="shop">
-      <form>
+      <form class="filters">
         <fieldset class="range">
           <legend>Стоимость:</legend>
           <input type="range" min="0" max="15000" step="1000">
@@ -61,30 +62,32 @@
       <section class="catalog">
         <header class="catalog-header"></header>
         <div class="sort">
-          <b>СОРТИРОВАТЬ:</b>
+          <h4>СОРТИРОВАТЬ:</h4>
           <ul>
             <li><a href="#">ПО ЦЕНЕ</a></li>
             <li><a href="#">ПО ТИПУ</a></li>
             <li><a href="#">ПО ФУНКЦИОНАЛУ</a></li>
           </ul>
           <div class="sort-way">
-            <a href="#" class="down"></a>
-            <a href="#" class="up"></a>
+            <a href="#" class="down">\/</a>
+            <a href="#" class="up">^</a>
           </div>
-        </div class="examples">
-        <a href="#"><img src="http://placehold.it/200x200" width="200" height="200" alt="site-scr"></a>
-        <a href="#"><img src="http://placehold.it/200x200" width="200" height="200" alt="site-scr"></a>
-        <a href="#"><img src="http://placehold.it/200x200" width="200" height="200" alt="site-scr"></a>
-        <a href="#"><img src="http://placehold.it/200x200" width="200" height="200" alt="site-scr"></a>
-        <a href="#"><img src="http://placehold.it/200x200" width="200" height="200" alt="site-scr"></a>
-        <a href="#"><img src="http://placehold.it/200x200" width="200" height="200" alt="site-scr"></a>
+        </div>
+        <div class="examples">
+          <a href="#"><img src="img/examp-1.jpg" width="240" height="240" alt="site-scr"></a>
+          <a href="#"><img src="img/examp-2.jpg" width="240" height="240" alt="site-scr"></a>
+          <a href="#"><img src="img/examp-3.jpg" width="240" height="240" alt="site-scr"></a>
+          <a href="#"><img src="img/examp-4.jpg" width="240" height="240" alt="site-scr"></a>
+          <a href="#"><img src="img/examp-5.jpg" width="240" height="240" alt="site-scr"></a>
+          <a href="#"><img src="img/examp-6.jpg" width="240" height="240" alt="site-scr"></a>
+        </div>
         <nav class="paginator">
           <ul>
-            <li><a class="btn prev" href="#"></a>Предыдущая</li>
+            <li><a class="btn prev" href="#">Предыдущая</a></li>
             <li><a class="btn active" href="#">1</a></li>
             <li><a class="btn" href="#">2</a></li>
             <li><a class="btn" href="#">3</a></li>
-            <li><a class="next" href="#">СЛЕДУЮЩАЯ</a></li>
+            <li><a class="btn next" href="#">СЛЕДУЮЩАЯ</a></li>
           </ul>
         </nav>
       </section>
@@ -92,8 +95,8 @@
     </main>
     <footer>
       <section class="map">
-        <div width="100%">
-          <img src="http://placehold.it/1200x300" width="1200" height="300" alt="map">
+        <div>
+          <img src="img/map.jpg" width="1199" height="416" alt="map">
         </div>
         <article class="contacts">
           <h3>NЁRDS DESIGN STUDIO</h3>
@@ -102,7 +105,7 @@
           тел. +7 (812) 275-75-75
           <a class="btn" href="#"></a>
         </article>
-        <img src="http://placehold.it/100x400" width="100" height="100" alt="logo">
+        <img src="img/map-pointer.png" width="231" height="190" alt="pointer">
       </section>
       <section class="footer-social">
           <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
