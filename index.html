@@ -21,21 +21,25 @@
           <a href="#">Корзина</a>
         </div>
         <div class="adv-slider">
-          <div class="advert">
-            <h2>Долго, дорого, скрупулезно.</h2>
-            <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-            <a class="btn" href="#">УЗНАТЬ БОЛЬШЕ</a>
-            <img class="sites" src="img/slider-1.png" width="338" height="231" alt="слайд">
+            <div class="advert-left">
+              <b>Долго, дорого, <br>
+              скрупулезно.</b>
+              <p>Математически выверенный дизайн<br> 
+              для вашего сайта или мобильного приложения.</p>
+              <a class="btn" href="#">УЗНАТЬ БОЛЬШЕ</a>
+            </div>
+            <div class="controls">
+              <input type="radio" name="control" id="slide-1" checked>
+              <input type="radio" name="control" id="slide-1">
+              <input type="radio" name="control" id="slide-1">
+            </div>
+            <div class="advert-right">
+              <img class="sites" src="img/slider-1.png" width="338" height="231" alt="слайд">
+            </div>
           </div>
-          <div class="controls">
-            <input type="radio" name="control" checked>
-            <input type="radio" name="control">
-            <input type="radio" name="control">
-          </div>
-        </div>
       </div>
     </header>
-    <main>
+    <main  class="container">
     	<section class="img-order">
     		<div>
     			<img src="img/order-sites.jpg" width="240" height="124" alt="pic">
@@ -46,7 +50,7 @@
     		<div>
     			<img src="img/order-apps.jpg" width="240" height="124" alt="pic">
     			<h3>Приложения</h3>
-    			<p>Покорите топ-10 приложений в AppStrore и Google Play</p>
+    			<p>Покорите топ-10 приложений<br>в AppStrore и Google Play</p>
     			<a class="btn">ЗАКАЗАТЬ</a>
     		</div>
     		<div>
@@ -56,10 +60,11 @@
     			<a class="btn">ЗАКАЗАТЬ</a>
     		</div>
     	</section>
+      <hr>
     	<section class="about">
     		<div class="about-left">
-    			<h2>Мы — маленькая, но гордая дизайн-студия из Краснодара. </h2>
-    			<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>
+    			<p><b class="title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</b></p>
+    			<p class="feature">Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>
     			<h4>Выполняем заказы на разработку:</h4>
     			<ul>
 	    			<li>Веб-сайтов любой сложности</li>
@@ -68,8 +73,8 @@
     			</ul>
     		</div>
     		<div class="about-right">
-    			<img class="main-logo" src="img/main-logo.svg" width="139" height="56" alt="main-logo">
-          <div>Since 2004</div>
+    			<img class="main-logo" src="img/main-logo.svg" width="220" height="75" alt="main-logo">
+          <div class="since">Since 2004</div>
     			<h4>КАК Мы работаем:</h4>
 					<ul>
 	    			<li>С самоотдачей 146%</li>
@@ -77,12 +82,14 @@
     				<li>По предоплате 50%</li>
     			</ul>
     		</div>
+        <hr>
     		<div class="portfolio">
     			<a href="#"><img src="img/logo-glukhanko.png" width="198" height="37" alt="glukhano"></a>
     			<a href="#"><img src="img/logo-academy.png" width="199" height="68" alt="HTMLacademy"></a>
     			<a href="#"><img src="img/logo-barber.png" width="200" height="100" alt="barbershop"></a>
     		</div>
     	</section>
+      <hr>
     </main>
     <footer>
     	<section class="map">
@@ -94,14 +101,14 @@
     			191186, Санкт-Петербург, <br>
     			ул. Б. Конюшенная, д. 19/8 <br><br>
     			тел. +7 (812) 275-75-75
-    			<a class="btn" href="#"></a>
+    			<a class="btn" href="#">напишите нам</a>
     		</article>
-    		<img src="img/map-pointer.png" width="231" height="190" alt="pointer">
+    		<img class="pointer" src="img/map-pointer.png" width="231" height="190" alt="pointer">
     	</section>
     	<section class="footer-social">
-					<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-					<a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-					<a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+					<a class="social-btn social-btn-vk" href="#"><div class="icon-social"></div></a>
+					<a class="social-btn social-btn-fb" href="#"><div class="icon-social"></div></a>
+					<a class="social-btn social-btn-inst" href="#"><div class="icon-social"></div></a>
 				</section>
 				<section class="footer-promo">
 					<b>Давайте дружить, это выгодно!</b>

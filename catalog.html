@@ -20,46 +20,52 @@
         <div class="cart">
           <a href="#">Корзина</a>
         </div>
-        <div class="shop-header">Добро пожаловать в магазин готовых макетов</div>
+        <div class="shop-header">Добро пожаловать в магазин<br>
+        готовых макетов</div>
       </div>
     </header>
-    <main>
+    <main  class="container">
     <section class="shop">
       <form class="filters">
         <fieldset class="range">
           <legend>Стоимость:</legend>
-          <input type="range" min="0" max="15000" step="1000">
+            <div class="ranger">
+              <input type="range" min="0" max="150000" step="1000">
+            </div>
           <label for="min-range">от</label>
-          <input type="text" value="0" id="min-range"> 
+          <input class="min-max" type="text" value="0" id="min-range"> 
           <label for="max-range">до</label>
-          <input type="text" value="15000" id="max-range">
+          <input class="min-max" type="text" value="15000" id="max-range">
         </fieldset>
         <fieldset class="grid">
           <legend>Сетка:</legend>
-          <input type="radio" id="adaptive">
-          <label for="adaptive">Адаптивная</label>
-          <input type="radio" id="fix">
-          <label for="fix">Фиксированная</label>
-          <input type="radio" id="rubber">
-          <label for="rubber">Резиновая</label>
+          <ul>
+            <li><input type="radio" name="grid-type" id="adaptive">
+            <label for="adaptive">Адаптивная</label></li>
+            <li><input type="radio" name="grid-type" id="fix">
+            <label for="fix">Фиксированная</label></li>
+            <li><input type="radio" name="grid-type" id="rubber">
+            <label for="rubber">Резиновая</label></li>  
+          </ul>
         </fieldset>
         <fieldset class="features">
           <legend>ОСОБЕННОСТИ:</legend>
-          <input type="checkbox" id="slider" checked>
-          <label for="slider">Слайдер</label>
-          <input type="checkbox" id="plusses">
-          <label for="plusses">Блок преимуществ</label>
-          <input type="checkbox" id="news" checked>
-          <label for="news">Новости</label>
-          <input type="checkbox" id="gallery">
-          <label for="gallery">Галерея</label>
-          <input type="checkbox" id="cart">
-          <label for="cart">Корзина</label>
+          <ul>
+            <li><input type="checkbox" id="slider" checked>
+            <label for="slider">Слайдер</label></li>
+            <li><input type="checkbox" id="plusses">
+            <label for="plusses">Блок преимуществ</label></li>
+            <li><input type="checkbox" id="news" checked>
+            <label for="news">Новости</label></li>
+            <li><input type="checkbox" id="gallery">
+            <label for="gallery">Галерея</label></li>
+            <li><input type="checkbox" id="cart">
+            <label for="cart">Корзина</label></li>
+          </ul>
         </fieldset>
         <button class="btn">Показать</button>
       </form>
       <section class="catalog">
-        <header class="catalog-header"></header>
         <div class="sort">
           <h4>СОРТИРОВАТЬ:</h4>
           <ul>
@@ -83,9 +89,9 @@
         <nav class="paginator">
           <ul>
             <li><a class="btn prev" href="#">Предыдущая</a></li>
-            <li><a class="btn active" href="#">1</a></li>
-            <li><a class="btn" href="#">2</a></li>
-            <li><a class="btn" href="#">3</a></li>
+            <li><a class="btn num active" href="#">1</a></li>
+            <li><a class="btn num" href="#">2</a></li>
+            <li><a class="btn num" href="#">3</a></li>
             <li><a class="btn next" href="#">СЛЕДУЮЩАЯ</a></li>
           </ul>
         </nav>
@@ -102,14 +108,14 @@
           191186, Санкт-Петербург, <br>
           ул. Б. Конюшенная, д. 19/8 <br><br>
           тел. +7 (812) 275-75-75
-          <a class="btn" href="#"></a>
+          <a class="btn" href="#">напишите нам</a>
         </article>
-        <img src="img/map-pointer.png" width="231" height="190" alt="pointer">
+        <img class="pointer" src="img/map-pointer.png" width="231" height="190" alt="pointer">
       </section>
       <section class="footer-social">
-          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+          <a class="social-btn social-btn-vk" href="#"><div class="icon-social"></div></a>
+          <a class="social-btn social-btn-fb" href="#"><div class="icon-social"></div></a>
+          <a class="social-btn social-btn-inst" href="#"><div class="icon-social"></div></a>
         </section>
         <section class="footer-promo">
           <b>Давайте дружить, это выгодно!</b>
