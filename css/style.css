@@ -1,7 +1,7 @@
 body
 {
     font-family: 'Roboto';
-    font-size: 0;
+    font-size: 16px;
     font-variant: medium;
     line-height: 22px;
 
@@ -23,7 +23,7 @@ ul
     font-size: 36px;
     line-height: 35px;
     display: block;
-    margin-top: 72px;
+    margin-top: 63px;
     margin-bottom: 20px;
 }
 
@@ -40,10 +40,7 @@ ul
     background-color: #eee;
 }
 
-.main-logo,
-.main-navigation,
 .main-navigation li,
-.cart,
 .img-order div,
 .advert-left,
 .advert-right,
@@ -55,7 +52,6 @@ ul
 .footer-promo,
 .filters,
 .catalog,
-.sort h4,
 .sort ul,
 .sort li,
 .sort-way,
@@ -68,14 +64,40 @@ ul
 }
 
 .main-navigation,
-.cart,
-.cart a
+.img-order,
+.adv-slider,
+.about,
+.main-footer,
+.examples,
+.shop,
+.paginator,
+.sort
+{
+    font-size: 0;
+}
+
+
+.main-navigation
 {
     font-size: 14px;
     font-weight: bold;
     line-height: 30px;
 
     margin-top: 26px;
+
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: #000;
+}
+
+.cart a
+{
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 30px;
+
+    
 
     text-decoration: none;
     text-transform: uppercase;
@@ -94,19 +116,29 @@ ul
     color: black;
 }
 
-.main-logo
-{
-    margin-right: 184px;
-}
 
 .main-navigation li
 {
     margin-right: 42px;
 }
 
+.main-navigation li:first-child
+{
+   margin-right: 180px;
+   margin-top: -26px;
+
+}
+.main-navigation li:last-child
+{
+   margin-right: 0;
+   margin-left: 51px;
+
+}
+
 .main-navigation ul
 {
-    margin-right: 54px;
+    margin-right: 46px;
+    width: 880px;
 }
 
 .adv-slider
@@ -117,7 +149,7 @@ ul
 
 .advert-left
 {
-    margin-right: 50px;
+    margin-right: 48px;
 }
 
 .advert-left p
@@ -139,8 +171,8 @@ ul
 
 .controls
 {
-    margin-top: 243px;
-    margin-right: 85px;
+    margin-top: 233px;
+    margin-right: 87px;
 }
 
 .controls input
@@ -150,7 +182,7 @@ ul
 
 .advert-right
 {
-    margin-top: 52px;
+    margin-top: 42px;
 }
 
 .img-order
@@ -214,6 +246,11 @@ hr
     size: 2px;
 }
 
+hr.bottom
+{
+    margin-bottom: 84px;
+}
+
 .about-left
 {
     width: 620px;
@@ -247,19 +284,20 @@ hr
 {
     margin: 5px 15px;
     margin-top: 8px;
-    margin-bottom: 26px;
+    margin-bottom: 14px;
 }
 
 .since
 {
     margin-bottom: 63px;
     margin-left: 7px;
-
+    font-size: 16px;
     text-align: center;
     text-transform: uppercase;
 }
 
 .about h4
+
 {
     font-size: 16px;
     line-height: 22px;
@@ -307,7 +345,7 @@ hr
 {
     position: relative;
 
-    margin: 85px 162px 66px;
+    margin: 80px 161px 65px;
     
 }
 
@@ -317,9 +355,9 @@ hr
     line-height: 20px;
 
     position: absolute;
-    top: 87px;
-    left: 161px;
-
+    top: 88px;
+    left: 159px;
+    
     width: 210px;
     padding: 20px;
     padding-top: 6px;
@@ -348,14 +386,15 @@ hr
 .pointer
 {
     position: absolute;
-    top: 111px;
-    right: 130px;
+    top: 112px;
+    right: 128px;
 }
 
 .footer-social
 {
     margin-right: 50px;
     margin-left: 320px;
+    width: 270px;
 }
 
 .footer-promo b
@@ -399,7 +438,7 @@ hr
 
     color: black;
 
-    margin-top: 65px;
+    margin-top: 54px;
     padding-bottom: 83px;
 
 }
@@ -482,8 +521,6 @@ legend
 .sort h4
 {
     margin: 0;
-    margin-right: 24px;
-    width: 100px;
 }
 
 .catalog
@@ -502,10 +539,17 @@ legend
     margin-right: 43px;
 }
 
+.sort li:first-child
+{
+
+    margin-right: 37px;
+    opacity: 1;
+}
+
 .examples
 {
     padding-top: 46px;
-    margin-bottom: 67px;
+    margin-bottom: 68px;
 }
 
 .examples a
