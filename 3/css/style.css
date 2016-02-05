@@ -22,7 +22,9 @@ ul
 {
     font-size: 36px;
     line-height: 35px;
+
     display: block;
+
     margin-top: 63px;
     margin-bottom: 20px;
 }
@@ -40,7 +42,11 @@ ul
     background-color: #eee;
 }
 
+.main-navigation,
+.main-navigation ul,
 .main-navigation li,
+.main-logo,
+.cart,
 .img-order div,
 .advert-left,
 .advert-right,
@@ -63,6 +69,7 @@ ul
     vertical-align: top;
 }
 
+.container,
 .main-navigation,
 .img-order,
 .adv-slider,
@@ -76,14 +83,15 @@ ul
     font-size: 0;
 }
 
-
 .main-navigation
 {
     font-size: 14px;
     font-weight: bold;
     line-height: 30px;
 
+    width: 460px;
     margin-top: 26px;
+    margin-left: 183px;
 
     text-decoration: none;
     text-transform: uppercase;
@@ -96,8 +104,6 @@ ul
     font-size: 14px;
     font-weight: bold;
     line-height: 30px;
-
-    
 
     text-decoration: none;
     text-transform: uppercase;
@@ -122,29 +128,18 @@ ul
     margin-right: 42px;
 }
 
-.main-navigation li:first-child
-{
-   margin-right: 180px;
-   margin-top: -26px;
 
-}
-.main-navigation li:last-child
+.cart
 {
-   margin-right: 0;
-   margin-left: 51px;
-
-}
-
-.main-navigation ul
-{
-    margin-right: 46px;
-    width: 880px;
+    margin-left: 32px;
+    margin-top: 26px;
 }
 
 .adv-slider
 {
     margin-bottom: 80px;
     padding-bottom: 57px;
+    position: relative;
 }
 
 .advert-left
@@ -155,7 +150,6 @@ ul
 .advert-left p
 {
     font-size: 16px;
-
 }
 
 .advert-left .btn
@@ -171,8 +165,11 @@ ul
 
 .controls
 {
+    position: absolute;
     margin-top: 233px;
     margin-right: 87px;
+    top: 0;
+    left: 408px;
 }
 
 .controls input
@@ -183,6 +180,7 @@ ul
 .advert-right
 {
     margin-top: 42px;
+    margin-left: 135px;
 }
 
 .img-order
@@ -255,7 +253,6 @@ hr.bottom
 {
     width: 620px;
     margin-right: 15px;
-
     padding-top: 17px;
 }
 
@@ -269,9 +266,10 @@ hr.bottom
 
 .feature
 {
-    margin-top: 12px;
-    margin-bottom: 45px;
     font-size: 16px;
+
+    margin-top: 12px;
+    margin-bottom: 43px;
 }
 
 .about-right
@@ -284,20 +282,21 @@ hr.bottom
 {
     margin: 5px 15px;
     margin-top: 8px;
-    margin-bottom: 14px;
+    margin-bottom: 23px;
 }
 
 .since
 {
-    margin-bottom: 63px;
-    margin-left: 7px;
     font-size: 16px;
+
+    margin-bottom: 65px;
+    margin-left: 7px;
+
     text-align: center;
     text-transform: uppercase;
 }
 
 .about h4
-
 {
     font-size: 16px;
     line-height: 22px;
@@ -346,7 +345,6 @@ hr.bottom
     position: relative;
 
     margin: 80px 161px 65px;
-    
 }
 
 .contacts
@@ -357,7 +355,7 @@ hr.bottom
     position: absolute;
     top: 88px;
     left: 159px;
-    
+
     width: 210px;
     padding: 20px;
     padding-top: 6px;
@@ -392,9 +390,9 @@ hr.bottom
 
 .footer-social
 {
+    width: 270px;
     margin-right: 50px;
     margin-left: 320px;
-    width: 270px;
 }
 
 .footer-promo b
@@ -406,8 +404,9 @@ hr.bottom
 
 .footer-promo p
 {
-    margin-top: 3px;
     font-size: 16px;
+
+    margin-top: 3px;
 }
 .icon-social
 {
@@ -433,14 +432,13 @@ hr.bottom
     font-size: 40px;
     line-height: 48px;
 
-    text-transform: uppercase;
-    text-align: center;
-
-    color: black;
-
     margin-top: 54px;
     padding-bottom: 83px;
 
+    text-align: center;
+    text-transform: uppercase;
+
+    color: black;
 }
 
 .shop
@@ -450,20 +448,21 @@ hr.bottom
 
 .filters
 {
-    
-    border: 0;
-    
+    font-size: 16px;
+
     width: 240px;
     margin-right: 80px;
-    font-size: 16px
+
+    border: 0;
 }
 
 .filters fieldset
 {
-    border: 0;
-    padding: 0;
     margin: 0;
     margin-bottom: 43px;
+    padding: 0;
+
+    border: 0;
 }
 
 legend
@@ -474,16 +473,17 @@ legend
 .ranger
 {
     min-height: 80px;
-    background-color: #f1f1f1;
     margin-bottom: 15px;
 
+    background-color: #f1f1f1;
 }
 
 .min-max
 {
     width: 60px;
-    background-color: #f1f1f1;
     padding: 9px;
+
+    background-color: #f1f1f1;
 }
 
 .filters li
@@ -535,21 +535,22 @@ legend
 
 .sort li
 {
-    opacity: .3;
     margin-right: 43px;
+
+    opacity: .3;
 }
 
 .sort li:first-child
 {
-
     margin-right: 37px;
+
     opacity: 1;
 }
 
 .examples
 {
-    padding-top: 46px;
     margin-bottom: 68px;
+    padding-top: 46px;
 }
 
 .examples a
@@ -581,15 +582,15 @@ legend
 .paginator .btn,
 .filters .btn
 {
-    border: 2px solid #f1f1f1;
-    background-color: #f1f1f1;
-    border-radius: 5px;
     padding: 8px;
+
+    border: 2px solid #f1f1f1;
+    border-radius: 5px;
+    background-color: #f1f1f1;
 }
 
 .num
 {
-    
     width: 18px;
 }
 
@@ -604,10 +605,11 @@ legend
     font-size: 18px;
     line-height: 30px;
 
+    padding: 0;
+
     text-transform: uppercase;
 
     color: black;
-    padding: 0;
 }
 
 .btn
@@ -631,5 +633,4 @@ legend
 .prev
 {
     display: none;
-    
 }
