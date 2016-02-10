@@ -10,7 +10,7 @@
   <body>
   	<header class="main-header">
       <div class="container">
-      	<a class="main-logo" href="index.html"><img  src="img/main-logo.svg" width="139" height="56" alt="main-logo"></a>
+      	<a class="main-logo" href="index.html"><img  src="img/main-logo1.svg" width="139" height="56" alt="main-logo"></a>
         <nav class="main-navigation">
           <ul>
             <li><a href="#">Студия</a></li>
@@ -89,8 +89,12 @@
     			</ul>
     		</div>
     		<div class="about-right">
-    			<img class="main-logo" src="img/main-logo.svg" width="220" height="75" alt="main-logo">
-          <div class="since">Since 2004</div>
+        
+    			<img class="main-logo" src="img/main-logo1.svg" width="220" height="75" alt="main-logo">
+        
+          <div class="since">
+          <div>Since 2004</div>
+          </div>
     			<h4>КАК Мы работаем:</h4>
 					<ul>
 	    			<li>С самоотдачей 146%</li>
@@ -110,7 +114,7 @@
     <footer class="main-footer">
       <section class="map">
         <div>
-          <img src="img/map.jpg" width="1199" height="416" alt="map">
+          
         </div>
         <article class="contacts">
           <h3>NЁRDS DESIGN STUDIO</h3>
@@ -121,7 +125,8 @@
         </article>
         <img class="pointer" src="img/map-pointer.png" width="231" height="190" alt="pointer">
       </section>
-      <section class="footer-social">
+      <div class="container">
+        <section class="footer-social">
           <a href="#"><div class="icon-social social-btn-vk"></div></a>
           <a href="#"><div class="icon-social social-btn-fb"></div></a>
           <a href="#"><div class="icon-social social-btn-inst"></div></a>
@@ -130,6 +135,23 @@
           <b>Давайте дружить, это выгодно!</b>
           <p>Скидка 10% для друзей из социальных сетей.</p>
         </section>
-    </footer>	
+        </div>
+    </footer>
+    <form class="write-us" action="htmlacademy.ru" method="get">
+      <div class="writer-data">
+        <div class="data-r">
+          <label>Ваше имя:</label>
+          <input type="text" id="write-name" placeholder="Представьтесь, пожалуйста" ></input>
+        </div>
+        <div class="data-l">
+          <label>Ваш e-mail:</label>
+          <input type="e-mail" id="write-mail" placeholder="Для отправки ответа" ></input>    
+          </div>
+      </div>
+      <label>Текст письма:</label>
+      <textarea rows="4" id="write-letter" placeholder="В свободной форме"></textarea>
+      <button class="btn" type="submit">ОТПРАВИТЬ</button>
+      <div class="close">+</div>
+    </form>	
   </body>
 </html>
