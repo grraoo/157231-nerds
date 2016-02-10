@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>NЁRDS DESIGN STUDIO</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:500,300" rel="stylesheet" type="text/css">
   </head>
   <body>
   	<header class="main-header">
@@ -13,7 +15,7 @@
           <ul>
             <li><a href="index.html">Студия</a></li>
             <li><a href="#">Клиенты</a></li>
-            <li><a href="#">Магазин</a></li>
+            <li><a class="current-page" href="#">Магазин</a></li>
             <li><a href="#">Контакты</a></li>
           </ul>
         </nav>
@@ -24,41 +26,63 @@
     </header>
     <main  class="container">
     <section class="shop">
-      <form class="filters">
+      <form class="filters" action="form.php" method="GET">
         <fieldset class="range">
           <legend>Стоимость:</legend>
             <div class="ranger">
-              <input type="range" min="0" max="150000" step="1000">
+              <div class="scale">
+            <div class="bar"></div>
+          </div>
+          <div class="toggle toggle-min"></div>
+          <div class="toggle toggle-max"></div>
             </div>
-          <label for="min-range">от</label>
-          <input class="min-max" type="text" value="0" id="min-range"> 
-          <label for="max-range">до</label>
-          <input class="min-max" type="text" value="15000" id="max-range">
+            <div class="price-controls">
+          <label class="min-range" for="min-range">от<input class="min-max" type="text" value="0" id="min-range"></label>
+           
+          <label class="max-range" for="max-range">до<input class="min-max" type="text" value="15000" id="max-range"></label>
+          
+          </div>
         </fieldset>
         <fieldset class="grid">
           <legend>Сетка:</legend>
           <ul>
-            <li><input type="radio" name="grid-type" id="adaptive">
-            <label for="adaptive">Адаптивная</label></li>
-            <li><input type="radio" name="grid-type" id="fix">
-            <label for="fix">Фиксированная</label></li>
-            <li><input type="radio" name="grid-type" id="rubber">
-            <label for="rubber">Резиновая</label></li>  
+            <li>
+            <input type="radio" name="grid-type" id="adaptive">
+            <label for="adaptive">Адаптивная</label>
+            </li>
+            <li>
+            <input type="radio" name="grid-type" id="fix">
+            <label for="fix">Фиксированная</label>
+            </li>
+            <li>
+            <input type="radio" name="grid-type" id="rubber">
+            <label for="rubber">Резиновая</label>
+            </li>  
           </ul>
         </fieldset>
         <fieldset class="features">
           <legend>ОСОБЕННОСТИ:</legend>
           <ul>
-            <li><input type="checkbox" id="slider" checked>
-            <label for="slider">Слайдер</label></li>
-            <li><input type="checkbox" id="plusses">
-            <label for="plusses">Блок преимуществ</label></li>
-            <li><input type="checkbox" id="news" checked>
-            <label for="news">Новости</label></li>
-            <li><input type="checkbox" id="gallery">
-            <label for="gallery">Галерея</label></li>
-            <li><input type="checkbox" id="cart">
-            <label for="cart">Корзина</label></li>
+            <li>
+            <input type="checkbox" id="slider" checked>
+            <label for="slider">Слайдер</label>
+            </li>
+            <li>
+            <input type="checkbox" id="plusses">
+            <label for="plusses">Блок преимуществ</label>
+            </li>
+            <li>
+            <input type="checkbox" id="news" checked>
+            <label for="news">Новости</label>
+            </li>
+            <li>
+            <input type="checkbox" id="gallery">
+            <label for="gallery">Галерея</label>
+            </li>
+            <li>
+            <input type="checkbox" id="cart">
+            <label for="cart">Корзина</label>
+            </li>
           </ul>
         </fieldset>
         <button class="btn" type="submit">Показать</button>
@@ -68,32 +92,76 @@
           
           <ul>
           <li><h4>СОРТИРОВАТЬ:</h4></li>
-            <li><a href="#">ПО ЦЕНЕ</a></li>
-            <li><a href="#">ПО ТИПУ</a></li>
-            <li><a href="#">ПО ФУНКЦИОНАЛУ</a></li>
+            <li><a href="#">ПО&nbsp;ЦЕНЕ</a></li>
+            <li><a href="#">ПО&nbsp;ТИПУ</a></li>
+            <li><a href="#">ПО&nbsp;ФУНКЦИОНАЛУ</a></li>
           </ul>
           <div class="sort-way">
-            <a href="#" class="down">\/</a>
-            <a href="#" class="up">^</a>
+            <a href="#" class="down">▼</a>
+            <a href="#" class="up">▲</a>
           </div>
         </div>
         <div class="examples">
-          <a href="#"><img src="img/examp-1.jpg" width="240" height="240" alt="site-scr"></a>
-          <a href="#"><img src="img/examp-2.jpg" width="240" height="240" alt="site-scr"></a>
-          <a href="#"><img src="img/examp-3.jpg" width="240" height="240" alt="site-scr"></a>
-          <a href="#"><img src="img/examp-4.jpg" width="240" height="240" alt="site-scr"></a>
-          <a href="#"><img src="img/examp-5.jpg" width="240" height="240" alt="site-scr"></a>
-          <a href="#"><img src="img/examp-6.jpg" width="240" height="240" alt="site-scr"></a>
+          <a href="#"><img src="img/examp-1.jpg" width="240" height="240" alt="site-scr">
+              <div class="decription-buy">
+            <h3>Aviator</h3>
+            <div class="description"><p>Одностраничный макет с авторским дизайном</p></div>
+            <button class="btn">8000 р.</button>
+          </div>
+          </a>
+
+          <a href="#"><img src="img/examp-2.jpg" width="240" height="240" alt="site-scr">
+              <div class="decription-buy">
+            <h3>SUNSET</h3>
+            <div class="description"><p>Интернет-магазин с личным кабинетом</p></div>
+            <button class="btn">8000 р.</button>
+          </div>
+          </a>
+
+          <a href="#"><img src="img/examp-3.jpg" width="240" height="240" alt="site-scr">
+              <div class="decription-buy">
+            <h3>Aviator</h3>
+            <div class="description"><p>Одностраничный макет с авторским дизайном</p></div>
+            <button class="btn">8000 р.</button>
+          </div>
+          </a>
+
+          <a href="#"><img src="img/examp-4.jpg" width="240" height="240" alt="site-scr">
+              <div class="decription-buy">
+            <h3>Aviator</h3>
+            <div class="description"><p>Одностраничный макет с авторским дизайном</p></div>
+            <button class="btn">8000 р.</button>
+          </div>
+          </a>
+
+          <a href="#"><img src="img/examp-5.jpg" width="240" height="240" alt="site-scr">
+              <div class="decription-buy">
+            <h3>Aviator</h3>
+            <div class="description"><p>Одностраничный макет с авторским дизайном</p></div>
+            <button class="btn">8000 р.</button>
+          </div>
+          </a>
+
+          <a href="#"><img src="img/examp-6.jpg" width="240" height="240" alt="site-scr">
+             <div class="decription-buy">
+            <h3>Aviator</h3>
+            <div class="description"><p>Одностраничный макет с авторским дизайном</p></div>
+            <button class="btn">8000 р.</button>
+          </div> 
+          </a>
+
+
+          
         </div>
-        <nav class="paginator">
+        <div class="paginator">
           <ul>
             <li><a class="btn prev" href="#">Предыдущая</a></li>
-            <li><a class="btn num active" href="#">1</a></li>
+            <li class="btn num active">1</li>
             <li><a class="btn num" href="#">2</a></li>
             <li><a class="btn num" href="#">3</a></li>
             <li><a class="btn next" href="#">СЛЕДУЮЩАЯ</a></li>
           </ul>
-        </nav>
+        </div>
       </section>
     </section>
     </main>
@@ -112,15 +180,31 @@
         <img class="pointer" src="img/map-pointer.png" width="231" height="190" alt="pointer">
       </section>
       <section class="footer-social">
-          <a class="social-btn social-btn-vk" href="#"><div class="icon-social"></div></a>
-          <a class="social-btn social-btn-fb" href="#"><div class="icon-social"></div></a>
-          <a class="social-btn social-btn-inst" href="#"><div class="icon-social"></div></a>
+          <a href="#"><div class="icon-social social-btn-vk"></div></a>
+          <a href="#"><div class="icon-social social-btn-fb"></div></a>
+          <a href="#"><div class="icon-social social-btn-inst"></div></a>
         </section>
         <section class="footer-promo">
           <b>Давайте дружить, это выгодно!</b>
           <p>Скидка 10% для друзей из социальных сетей.</p>
         </section>
     </footer>
+    <form class="write-us" action="htmlacademy.ru" method="get">
+      <div class="writer-data">
+        <div class="data-r">
+          <label>Ваше имя:</label>
+          <input type="text" id="write-name" placeholder="Представьтесь, пожалуйста" ></input>
+        </div>
+        <div class="data-l">
+          <label>Ваш e-mail:</label>
+          <input type="e-mail" id="write-mail" placeholder="Для отправки ответа" ></input>    
+          </div>
+      </div>
+      <label>Текст письма:</label>
+      <textarea rows="4" id="write-letter" placeholder="В свободной форме"></textarea>
+      <button class="btn" type="submit">ОТПРАВИТЬ</button>
+      <div class="close">+</div>
+    </form>
   </body>
  </html>
  
