@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>NЁRDS DESIGN STUDIO</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <base href="https://htmlacademy-htmlcss.github.io/157231-nerds/2/">
+</head>
+  <body>
+  	<header class="main-header">
+      <div class="container">
+        <img class="main-logo" src="img/main-logo.svg" width="139" height="56" alt="main-logo">
+        <nav class="main-navigation">
+          <ul>
+            <li><a href="#">Студия</a></li>
+            <li><a href="#">Клиенты</a></li>
+            <li><a href="#">Магазин</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="cart">
+          <a href="#">Корзина</a>
+        </div>
+        <div class="shop-header">Добро пожаловать в магазин готовых макетов</div>
+      </div>
+    </header>
+    <main>
+    <section class="shop">
+      <form class="filters">
+        <fieldset class="range">
+          <legend>Стоимость:</legend>
+          <input type="range" min="0" max="15000" step="1000">
+          <label for="min-range">от</label>
+          <input type="text" value="0" id="min-range"> 
+          <label for="max-range">до</label>
+          <input type="text" value="15000" id="max-range">
+        </fieldset>
+        <fieldset class="grid">
+          <legend>Сетка:</legend>
+          <input type="radio" id="adaptive">
+          <label for="adaptive">Адаптивная</label>
+          <input type="radio" id="fix">
+          <label for="fix">Фиксированная</label>
+          <input type="radio" id="rubber">
+          <label for="rubber">Резиновая</label>
+        </fieldset>
+        <fieldset>
+          <legend>ОСОБЕННОСТИ:</legend>
+          <input type="checkbox" id="slider" checked>
+          <label for="slider">Слайдер</label>
+          <input type="checkbox" id="plusses">
+          <label for="plusses">Блок преимуществ</label>
+          <input type="checkbox" id="news" checked>
+          <label for="news">Новости</label>
+          <input type="checkbox" id="gallery">
+          <label for="gallery">Галерея</label>
+          <input type="checkbox" id="cart">
+          <label for="cart">Корзина</label>
+        </fieldset>
+        <button class="btn">Показать</button>
+        <fieldset class="features"></fieldset>
+      </form>
+      <section class="catalog">
+        <header class="catalog-header"></header>
+        <div class="sort">
+          <h4>СОРТИРОВАТЬ:</h4>
+          <ul>
+            <li><a href="#">ПО ЦЕНЕ</a></li>
+            <li><a href="#">ПО ТИПУ</a></li>
+            <li><a href="#">ПО ФУНКЦИОНАЛУ</a></li>
+          </ul>
+          <div class="sort-way">
+            <a href="#" class="down">\/</a>
+            <a href="#" class="up">^</a>
+          </div>
+        </div>
+        <div class="examples">
+          <a href="#"><img src="img/examp-1.jpg" width="240" height="240" alt="site-scr"></a>
+          <a href="#"><img src="img/examp-2.jpg" width="240" height="240" alt="site-scr"></a>
+          <a href="#"><img src="img/examp-3.jpg" width="240" height="240" alt="site-scr"></a>
+          <a href="#"><img src="img/examp-4.jpg" width="240" height="240" alt="site-scr"></a>
+          <a href="#"><img src="img/examp-5.jpg" width="240" height="240" alt="site-scr"></a>
+          <a href="#"><img src="img/examp-6.jpg" width="240" height="240" alt="site-scr"></a>
+        </div>
+        <nav class="paginator">
+          <ul>
+            <li><a class="btn prev" href="#">Предыдущая</a></li>
+            <li><a class="btn active" href="#">1</a></li>
+            <li><a class="btn" href="#">2</a></li>
+            <li><a class="btn" href="#">3</a></li>
+            <li><a class="btn next" href="#">СЛЕДУЮЩАЯ</a></li>
+          </ul>
+        </nav>
+      </section>
+    </section>
+    </main>
+    <footer>
+      <section class="map">
+        <div>
+          <img src="img/map.jpg" width="1199" height="416" alt="map">
+        </div>
+        <article class="contacts">
+          <h3>NЁRDS DESIGN STUDIO</h3>
+          191186, Санкт-Петербург, <br>
+          ул. Б. Конюшенная, д. 19/8 <br><br>
+          тел. +7 (812) 275-75-75
+          <a class="btn" href="#"></a>
+        </article>
+        <img src="img/map-pointer.png" width="231" height="190" alt="pointer">
+      </section>
+      <section class="footer-social">
+          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+        </section>
+        <section class="footer-promo">
+          <b>Давайте дружить, это выгодно!</b>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </section>
+    </footer>
+  </body>
+ </html>
