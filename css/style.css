@@ -37,6 +37,7 @@ body
     font-variant: medium;
     line-height: 22px;
 
+
     margin: 0;
 
     color: #283136;
@@ -63,7 +64,7 @@ ul
 
 .btn
 {
-    font-family: Roboto;
+    font-family: 'Roboto', 'Arial', sans-serif;
     font-size: 12px;
     font-weight: bold;
     line-height: 18px;
@@ -83,6 +84,7 @@ ul
 .container
 {
     width: 880px;
+    padding: 0 10px;
     margin: 0 auto;
 }
 
@@ -111,10 +113,10 @@ ul
 .sort li,
 .sort-way,
 .sort-way a,
-.examples a,
+.site-exapmle,
 .paginator li,
-.data-l,
-.data-r
+.write-name,
+.write-mail
 {
     display: inline-block;
 
@@ -322,7 +324,7 @@ ul
 .slide .btn
 {
     font-size: 12px;
-    font-weight: 300;
+    font-weight: 700;
 
     display: block;
 
@@ -339,12 +341,14 @@ ul
     background: #fb565a;
 }
 
-.slide .btn:hover
+.slide .btn:hover,
+.contacts .btn:hover
 {
     background-color: #d6494d;
 }
-
-.slide .btn:active
+    
+.slide .btn:active,
+.contacts .btn:active
 {
     background-color: #b63538;
 }
@@ -364,22 +368,6 @@ ul
     background-image: url('../img/slider-3.png');
 }
 
-/*.slide {
-  display: none;
-}   
-
-#slide-1:checked ~ .view-port .slide:nth-child(1) {
-  display: block;
-}
-
-#slide-2:checked ~ .view-port .slide:nth-child(2) {
-  display: block;
-}
-
-#slide-3:checked ~ .view-port .slide:nth-child(3) {
-  display: block;
-}
-*/
 .controls
 {
     position: absolute;
@@ -653,11 +641,12 @@ hr.bottom
 {
     position: relative;
 
-    width: 1200px;
+    width: 100%;
     height: 416px;
     margin: 80px auto 0;
 
-    background: url(../img/map.jpg) no-repeat center;
+    /*background: url(../img/map.jpg) 100% 50%;
+    background-width: 100%;*/
 }
 
 .contacts
@@ -900,14 +889,6 @@ legend
     text-align: right;
 }
 
-/*.min-max
-{
-    width: 60px;
-    padding: 9px;
-
-    background-color: #f1f1f1;
-}*/
-
 .filters li
 {
     margin-bottom: 18px;
@@ -1139,16 +1120,17 @@ legend
     word-spacing: 80px;
 }
 
-.examples a
+.site-exapmle
 {
     line-height: 0;
 
     position: relative;
 
     width: 240px;
+    height: 240px;
 }
 
-.examples a::before
+.site-exapmle::before
 {
     position: absolute;
     top: -30px;
@@ -1164,7 +1146,7 @@ legend
     background-color: #f1f1f1;
 }
 
-.examples a::after
+.site-exapmle::after
 {
     position: absolute;
     top: -20px;
@@ -1181,14 +1163,14 @@ legend
     40px 0 0 0 white;
 }
 
-.examples a:hover::before
+.site-exapmle:hover::before
 {
     background-color: #797979;
 }
 
-.examples a:nth-child(n+3)
+.site-exapmle:nth-child(n+3)
 {
-    margin-top: 110px;
+    margin-top: 100px;
 }
 
 .examples::after
@@ -1248,7 +1230,7 @@ legend
     line-height: 18px;
 
     overflow: hidden;
-
+    
     height: 60px;
     margin-top: 10px;
     margin-bottom: 5px;
@@ -1261,7 +1243,7 @@ legend
     margin-top: 0;
 }
 
-a:hover .decription-buy
+.site-exapmle:hover .decription-buy
 {
     display: block;
 }
@@ -1411,21 +1393,18 @@ input:focus
 
 .write-us
 {
-    position: fixed;
-    top: 100px;
-    left: 50%;
-
-    display: none;
-
-    width: 460px;
-    padding: 50px 80px;
-    padding-right: 90px;
-
-    transform: translateX(-50%);
-
-    color: #000;
-    background-color: #fff;
-    box-shadow: 0 20px 40px 0 rgba(0, 1, 1, .75);
+    position: absolute;
+top: -50%;
+left: 40px;
+width: 460px;
+padding: 50px 80px;
+padding-right: 90px;
+color: #000;
+background-color: #fff;
+box-shadow: 0 20px 40px 0 rgba(0, 1, 1, .75);
+transform: translateY(-50%);
+display: none;
+z-index: 20;
 }
 
 .writer-data
@@ -1433,6 +1412,7 @@ input:focus
     margin-bottom: 20px;
 
     word-spacing: 15px;
+    
 }
 
 .writer-data label
@@ -1469,8 +1449,8 @@ input:focus
 }
 
 
-.data-l,
-.data-r
+.write-name,
+.write-mail
 {
     width: 220px;
 }
@@ -1494,6 +1474,14 @@ input:focus
     outline: 0 none;
 }
 
+.write-us label
+{
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-size: 16px;
+    font-variant: medium;
+    line-height: 22px
+}
+
 .write-us .btn
 {
     width: 100%;
@@ -1505,13 +1493,15 @@ input:focus
 }
 
 .write-us .btn:hover,
-.decription-buy .btn:hover
+.decription-buy .btn:hover,
+.write-us .close:hover
 {
     background-color: #d6494d;
 }
 
 .write-us .btn:focus,
-.decription-buy .btn:focus
+.decription-buy .btn:focus,
+.write-us .close:focus
 {
     background-color: #b63538;
 }
@@ -1536,12 +1526,94 @@ input:focus
 
     color: white;
     border-radius: 50%;
-    background-color: red;
+    background-color: #fb565a;
 }
 
+
+.main-footer
+{
+    width: 100%;
+    min-width: 900px;
+    position: relative;
+}
 
 .main-footer .container
 {
+
     min-height: 85px;
-    padding: 77px 0;
+    padding: 77px 10px;
 }
+
+.popup-bg
+{
+    position: fixed;
+
+background-color: rgba(0, 0, 0, .5);
+right: 0;
+left: 0;
+top: 0;
+bottom: 0;
+z-index: 0;
+display: none;
+
+}
+
+.popup-show
+{
+    display: block;
+}
+
+@keyframes show
+{
+    from 
+    {
+        transform:scale(.1);
+        opacity: 0;
+    }
+    to
+    {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes bg-show
+{
+    from 
+    {
+        
+        opacity: 0.3;
+    }
+    to
+    {
+        
+        opacity: 1;
+    }
+}
+
+.form-show
+{
+    animation-name: show;
+    animation-duration: .5s;
+    animation-fill-mode: both;
+}
+
+.bg-show
+{
+    animation-name: bg-show;
+    animation-duration: .5s;
+    animation-fill-mode: both;
+}
+
+iframe
+{
+    width: 100%;
+    frameborder: 0;
+}
+
+/*Свойство animation
+Свойство animation-delay
+Свойство animation-direction
+Свойство animation-iteration-count
+Свойство animation-play-state
+Свойство animation-timing-function
