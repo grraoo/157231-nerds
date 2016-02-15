@@ -272,6 +272,7 @@ ul
 
     background-repeat: no-repeat;
     background-position: 100% 10px;
+    background-color: #eeeeee;
 }
 
 .slide-text
@@ -342,15 +343,6 @@ ul
 .slide:nth-child(3)
 {
     background-image: url('../img/slider-3.png');
-}
-
-.controls
-{
-    position: absolute;
-    top: 236px;
-    left: 406px;
-
-    margin-right: 87px;
 }
 
 .controls input
@@ -526,6 +518,7 @@ hr.bottom
     position: relative;
 
     text-align: center;
+    z-index: 1;
 }
 
 .since div
@@ -1288,13 +1281,14 @@ legend
 .controls
 {
     position: absolute;
-    z-index: 10;
+    
     top: 206px;
     left: 330px;
 
     width: 200px;
 
     text-align: center;
+    z-index: 40;
 }
 
 .controls label
@@ -1306,12 +1300,43 @@ legend
     margin: 0 6px;
 
     cursor: pointer;
-    vertical-align: top;
+    vertical-align: middle;
 
     border: 3px solid white;
     border-radius: 50%;
     background: #fff;
 }
+
+.adv-slider input[id="slide-1"]:not(:checked) ~ .controls label[for="slide-1"]:hover
+{
+    box-shadow: 0 0 10px -1px #222222;
+}
+
+.adv-slider input[id="slide-2"]:not(:checked) ~ .controls label[for="slide-2"]:hover
+{
+    box-shadow: 0 0 10px -1px #222222;
+}
+
+.adv-slider input[id="slide-3"]:not(:checked) ~ .controls label[for="slide-3"]:hover
+{
+    box-shadow: 0 0 10px -1px #222222;
+}
+
+.adv-slider input[id="slide-1"]:checked ~ .controls label[for="slide-1"]
+{
+    cursor: default;
+}
+
+.adv-slider input[id="slide-2"]:checked ~ .controls label[for="slide-2"]
+{
+    cursor: default;
+}
+
+.adv-slider input[id="slide-3"]:checked ~ .controls label[for="slide-3"]
+{
+    cursor: default;
+}
+
 
 @keyframes slide-open
 {
@@ -1334,12 +1359,35 @@ legend
         transform: translateX(0) scaleX(1) ;
     }
     to {
-        opacity: 0;
+        /*opacity: 0;*/
         transform: translateX(-60%) scaleX(.1);        
     }
 }
 
+@keyframes load-hide
+{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0;
+    }
+}
 
+
+.slide:nth-child(1)
+{
+    z-index: 30;
+}
+.slide:nth-child(2)
+{
+    z-index: 20;
+}
+
+.slide:nth-child(3)
+{
+    z-index: 10;
+}
 
 #slide-1:checked ~ .controls label[for='slide-1'],
 #slide-2:checked ~ .controls label[for='slide-2'],
@@ -1355,6 +1403,8 @@ legend
     animation-duration: 1s;
     animation-fill-mode: both;
     transition-timing-function: ease-out;
+
+
 }
 
 #slide-1:checked ~ .view-port .slide:nth-child(2),
@@ -1363,8 +1413,9 @@ legend
     /*top: -310px;*/
     animation-name: slide-hide;
     animation-duration: 1s;
-    animation-fill-mode: forwards;
+    animation-fill-mode: both;
     transition-timing-function: ease-in;
+
 }
 
 #slide-2:checked ~ .view-port .slide:nth-child(2)
@@ -1374,6 +1425,8 @@ legend
     animation-duration: 1s;
     animation-fill-mode: both;
     transition-timing-function: ease-out;
+
+
 }
 
 #slide-2:checked ~ .view-port .slide:nth-child(1),
@@ -1382,13 +1435,14 @@ legend
     /*top: -310px;*/
     animation-name: slide-hide;
     animation-duration: 1s;
-    animation-fill-mode: forwards;
+    animation-fill-mode: both;
     transition-timing-function: ease-in;
 }
 
 #slide-3:checked ~ .view-port .slide:nth-child(3)
 {
     /*top: 0;*/
+
     animation-name: slide-open;
     animation-duration: 1s;
     animation-fill-mode: both;
@@ -1401,7 +1455,7 @@ legend
     /*top: -310px;*/
     animation-name: slide-hide;
     animation-duration: 1s;
-    animation-fill-mode: forwards;
+    animation-fill-mode: both;
     transition-timing-function: ease-in;
 }
 
@@ -1425,7 +1479,7 @@ background-color: #fff;
 box-shadow: 0 20px 40px 0 rgba(0, 1, 1, .75);
 transform: translateY(-50%);
 display: none;
-z-index: 20;
+z-index: 70;
 }
 
 .writer-data
@@ -1574,7 +1628,7 @@ right: 0;
 left: 0;
 top: 0;
 bottom: 0;
-z-index: 0;
+z-index: 60;
 display: none;
 
 }
@@ -1590,6 +1644,9 @@ display: none;
     {
         transform:scale(.1);
         opacity: 0;
+    }
+    75% {
+        transform: scale(1.1)
     }
     to
     {
