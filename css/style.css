@@ -50,6 +50,7 @@ ul
     display: block;
 
     padding: 10px;
+    border-radius: 3px;
 
     cursor: pointer;
     text-align: center;
@@ -57,6 +58,7 @@ ul
     text-transform: uppercase;
 
     color: white;
+    transition-duration: 0.25s;
 }
 
 .container
@@ -153,7 +155,7 @@ ul
     text-decoration: inherit;
     text-transform: none;
 
-    opacity: .4;
+    opacity:0.4;
 }
 
 .cart a
@@ -184,6 +186,7 @@ ul
     text-transform: uppercase;
 
     color: black;
+    transition-duration: 0.25s;
 }
 
 .main-navigation a:hover,
@@ -195,19 +198,24 @@ ul
 .main-navigation a:active,
 .cart a:active
 {
-    opacity: .4;
+    opacity:0.4;
     color: black;
 }
 
 
 .cart a:hover::before
 {
+
     opacity: 1;
 }
 
 .cart a:focus::before
 {
     opacity: .15;
+}
+
+.current-page{
+    position: relative;
 }
 
 .current-page::after
@@ -593,6 +601,7 @@ hr.bottom
     vertical-align: middle;
 
     opacity: .2;
+    transition-duration: 0.25s;
 }
 
 .portfolio a:hover
@@ -690,6 +699,7 @@ hr.bottom
 
     border-radius: 50%;
     background: #e1e1e1 url('../img/sprite.png') no-repeat center;
+    transition-duration: 0.25s;
 }
 
 .social-btn-vk
@@ -981,12 +991,14 @@ legend
 .paginator .btn:hover
 {
     background-color: #e5e5e5;
+    border-color: #e5e5e5;
 }
 
 .filters .btn:focus,
 .paginator .btn:focus
 {
     background-color: #d5d5d5;
+    border-color: #d5d5d5;
     box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, .15  );
 }
 
@@ -1010,6 +1022,7 @@ legend
     opacity: .3;
     color: #b2b2b2;
     border-bottom: 2px dotted #00ca74;
+    transition-duration: 0.25s;
 }
 
 .sort a:hover
@@ -1097,6 +1110,7 @@ legend
 
     width: 240px;
     height: 240px;
+
 }
 
 .site-exapmle::before
@@ -1135,6 +1149,7 @@ legend
 .site-exapmle:hover::before
 {
     background-color: #797979;
+    transition-duration: 0.25s;
 }
 
 .site-exapmle:nth-child(n+3)
@@ -1160,18 +1175,21 @@ legend
     top: 50%;
     left: 50%;
 
-    display: none;
+    opacity: 0;
+    
 
     width: 180px;
     height: 180px;
     padding: 10px;
 
-    transform: translate(-50%, -50%);
+    transform: scale(0.1);
     text-align: center;
     word-spacing: normal;
 
     color: black;
     background-color: white;
+
+    transition-duration: 0.25s;
 }
 
 .decription-buy .btn
@@ -1212,9 +1230,11 @@ legend
     margin-top: 0;
 }
 
+
 .site-exapmle:hover .decription-buy
 {
-    display: block;
+    opacity: 1;
+    transform: scale(1)  translate(-50%, -50%);
 }
 
 .paginator .next,
@@ -1249,7 +1269,7 @@ legend
 .paginator .active:focus
 {
     cursor: default;
-
+    border-color: #e5e5e5;
     background-color: white;
 }
 
@@ -1310,16 +1330,19 @@ legend
 .adv-slider input[id="slide-1"]:not(:checked) ~ .controls label[for="slide-1"]:hover
 {
     box-shadow: 0 0 10px -1px #222222;
+    transition-duration: 0.4s;
 }
 
 .adv-slider input[id="slide-2"]:not(:checked) ~ .controls label[for="slide-2"]:hover
 {
     box-shadow: 0 0 10px -1px #222222;
+    transition-duration: 0.4s;
 }
 
 .adv-slider input[id="slide-3"]:not(:checked) ~ .controls label[for="slide-3"]:hover
 {
     box-shadow: 0 0 10px -1px #222222;
+    transition-duration: 0.4s;
 }
 
 .adv-slider input[id="slide-1"]:checked ~ .controls label[for="slide-1"]
@@ -1363,17 +1386,6 @@ legend
         transform: translateX(-60%) scaleX(.1);        
     }
 }
-
-@keyframes load-hide
-{
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 0;
-    }
-}
-
 
 .slide:nth-child(1)
 {
@@ -1602,6 +1614,7 @@ z-index: 70;
     color: white;
     border-radius: 50%;
     background-color: #fb565a;
+    transition-duration: 0.25s;
 }
 
 
@@ -1642,7 +1655,7 @@ display: none;
 {
     from 
     {
-        transform:scale(.1);
+        transform:scale(0);
         opacity: 0;
     }
     75% {
