@@ -1415,14 +1415,15 @@ legend
     z-index: 10;
 }
 
-#slide-1:checked ~ .controls label[for='slide-1'],
-#slide-2:checked ~ .controls label[for='slide-2'],
-#slide-3:checked ~ .controls label[for='slide-3']
+/*#slide-1*/
+.adv-slider input:nth-child(1):checked ~ .controls label[for='slide-1'],
+.adv-slider input:nth-child(2):checked ~ .controls label[for='slide-2'],
+.adv-slider input:nth-child(3):checked ~ .controls label[for='slide-3']
 {
     background: #c1c1c1;
 }
 
-#slide-1:checked ~ .view-port .slide:nth-child(1)
+.adv-slider input:nth-child(1):checked ~ .view-port .slide:nth-child(1)
 {
     /*top: 0;*/
     animation-name: slide-open;
@@ -1433,8 +1434,8 @@ legend
 
 }
 
-#slide-1:checked ~ .view-port .slide:nth-child(2),
-#slide-1:checked ~ .view-port .slide:nth-child(3)
+.adv-slider input:nth-child(1):checked ~ .view-port .slide:nth-child(2),
+.adv-slider input:nth-child(1):checked ~ .view-port .slide:nth-child(3)
 {
     /*top: -310px;*/
     animation-name: slide-hide;
@@ -1444,7 +1445,7 @@ legend
 
 }
 
-#slide-2:checked ~ .view-port .slide:nth-child(2)
+.adv-slider input:nth-child(2):checked ~ .view-port .slide:nth-child(2)
 {
     /*top: 0;*/
     animation-name: slide-open;
@@ -1455,8 +1456,8 @@ legend
 
 }
 
-#slide-2:checked ~ .view-port .slide:nth-child(1),
-#slide-2:checked ~ .view-port .slide:nth-child(3)
+.adv-slider input:nth-child(2):checked ~ .view-port .slide:nth-child(1),
+.adv-slider input:nth-child(2):checked ~ .view-port .slide:nth-child(3)
 {
     /*top: -310px;*/
     animation-name: slide-hide;
@@ -1465,7 +1466,7 @@ legend
     transition-timing-function: ease-in;
 }
 
-#slide-3:checked ~ .view-port .slide:nth-child(3)
+.adv-slider input:nth-child(3):checked ~ .view-port .slide:nth-child(3)
 {
     /*top: 0;*/
 
@@ -1474,9 +1475,8 @@ legend
     animation-fill-mode: both;
     transition-timing-function: ease-out;
 }
-
-#slide-3:checked ~ .view-port .slide:nth-child(1),
-#slide-3:checked ~ .view-port .slide:nth-child(2)
+.adv-slider input:nth-child(3):checked ~ .view-port .slide:nth-child(1),
+.adv-slider input:nth-child(3)checked ~ .view-port .slide:nth-child(2)
 {
     /*top: -310px;*/
     animation-name: slide-hide;
