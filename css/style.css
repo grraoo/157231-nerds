@@ -15,7 +15,6 @@ body
     font-variant: medium;
     line-height: 22px;
 
-
     margin: 0;
 
     color: #283136;
@@ -50,23 +49,22 @@ ul
     display: block;
 
     padding: 10px;
-    border-radius: 3px;
 
     cursor: pointer;
+    transition-duration: .25s;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
 
-    color: #ffffff;
-    transition-duration: 0.25s;
+    color: #fff;
+    border-radius: 3px;
 }
 
 .container
 {
     width: 880px;
-    padding: 0 10px;
     margin: 0 auto;
-
+    padding: 0 10px;
 }
 
 .main-header
@@ -104,6 +102,7 @@ ul
     vertical-align: top;
 }
 
+.main-navigation,
 .container,
 .img-order,
 .about,
@@ -117,19 +116,23 @@ ul
 
 .main-navigation
 {
-    font-size: 14px;
-    font-weight: bold;
-    line-height: 30px;
-
     width: 580px;
     margin-top: 26px;
 
     text-align: right;
     text-decoration: none;
-    word-spacing: 40px;
+    
     text-transform: uppercase;
 
     color: #000;
+}
+
+.main-navigation li
+{
+    margin-left: 44px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 30px;
 }
 
 .cart a::before
@@ -156,7 +159,7 @@ ul
     text-decoration: inherit;
     text-transform: none;
 
-    opacity:0.4;
+    opacity: .4;
 }
 
 .cart a
@@ -183,13 +186,12 @@ ul
 
     position: relative;
 
+    transition-duration: .25s;
     text-decoration: none;
+    word-spacing: normal;
     text-transform: uppercase;
 
-    color: #000000;
-    transition-duration: 0.25s;
-
-    word-spacing: normal;
+    color: #000;
 }
 
 .main-navigation a:hover,
@@ -201,14 +203,13 @@ ul
 .main-navigation a:active,
 .cart a:active
 {
-    opacity:0.4;
-    color: #000000;
+    opacity: .4;
+    color: #000;
 }
 
 
 .cart a:hover::before
 {
-
     opacity: 1;
 }
 
@@ -217,7 +218,8 @@ ul
     opacity: .15;
 }
 
-.current-page{
+.current-page
+{
     position: relative;
 }
 
@@ -277,21 +279,21 @@ ul
     width: 100%;
     height: 310px;
 
+    background-color: #eee;
     /*-webkit-transition: top .5s ease;
        -moz-transition: top .5s ease;
             transition: top .5s ease;*/
-
     background-repeat: no-repeat;
     background-position: 100% 10px;
-    background-color: #eeeeee;
 }
 
 .slide-text
 {
     font-size: 16px;
     line-height: 22px;
+
     width: 500px;
-    padding: 30px 0;
+    padding: 32px 0;
 }
 
 .slide-title
@@ -312,14 +314,14 @@ ul
 .slide .btn
 {
     font-size: 12px;
-    line-height: 18px;
     font-weight: 700;
+    line-height: 18px;
 
     display: block;
 
     width: 220px;
-    margin-top: 25px;
-    padding: 12px 10px;
+    margin-top: 28px;
+    padding: 10px 10px
 
     text-align: center;
     text-decoration: none;
@@ -335,7 +337,7 @@ ul
 {
     background-color: #d6494d;
 }
-    
+
 .slide .btn:active,
 .contacts .btn:active
 {
@@ -394,6 +396,7 @@ ul
     font-weight: 400;
 
     margin-bottom: 5px;
+    margin-top: 17px;
 }
 
 .img-order div:last-child
@@ -473,16 +476,16 @@ hr.bottom
 {
     width: 620px;
     margin-right: 15px;
-    padding-top: 17px;
+    padding-top: 20px;
 }
 
 .title
 {
     font-size: 36px;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 28px;
 
-    color: #000000;
+    color: #000;
 }
 
 .feature
@@ -504,7 +507,7 @@ hr.bottom
 {
     display: inline-block;
 
-    margin: 5px 15px 25px;
+    margin: 5px 15px 27px;
 }
 
 .about li
@@ -515,7 +518,7 @@ hr.bottom
 .about li::before
 {
     position: absolute;
-    top: 12px;
+    top: 10px;
     left: -37px;
 
     width: 26px;
@@ -529,9 +532,9 @@ hr.bottom
 .since
 {
     position: relative;
+    z-index: 1;
 
     text-align: center;
-    z-index: 1;
 }
 
 .since div
@@ -544,7 +547,7 @@ hr.bottom
 
     display: inline-block;
 
-    margin-bottom: 45px;
+    margin-bottom: 43px;
     margin-left: 7px;
     padding: 0 15px;
 
@@ -573,7 +576,7 @@ hr.bottom
 {
     font-size: 16px;
     line-height: 22px;
-
+    margin-bottom: 23px;
     text-transform: uppercase;
 }
 
@@ -589,12 +592,12 @@ hr.bottom
 .about hr
 {
     margin-top: 70px;
-    margin-bottom: 40px;
+    margin-bottom: 45px;
 }
 
 .portfolio
 {
-    margin-bottom: 16px;
+    margin-bottom: 22px;
 }
 
 .portfolio a
@@ -604,10 +607,10 @@ hr.bottom
     margin-right: 106px;
     margin-left: 12px;
 
+    transition-duration: .25s;
     vertical-align: middle;
 
     opacity: .2;
-    transition-duration: 0.25s;
 }
 
 .portfolio a:hover
@@ -620,6 +623,10 @@ hr.bottom
     margin-right: 0;
     margin-left: 20px;
 }
+.portfolio a:first-child
+{
+    margin-top: -8px;
+}
 
 .map
 {
@@ -629,9 +636,7 @@ hr.bottom
     height: 416px;
     margin: 80px auto 0;
 
-
     background: url(../img/map.jpg) no-repeat center;
-    
 }
 
 .contacts
@@ -641,7 +646,7 @@ hr.bottom
 
     position: absolute;
     top: 88px;
-    left: 10px;
+    left: 0;
 
     width: 210px;
     padding: 20px;
@@ -653,19 +658,19 @@ hr.bottom
 .contacts h3
 {
     font-size: 16px;
-    line-height: 30px;
     font-weight: 400;
     font-variant: medium;
+    line-height: 30px;
 
     margin-top: 20px;
-    margin-bottom: 12px;
+    margin-bottom: 11px;
 }
 
 .contacts .btn
 {
     width: 184px;
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 29px;
     margin-bottom: 6px;
 
     border-radius: 3px;
@@ -704,11 +709,12 @@ hr.bottom
 {
     width: 62px;
     height: 62px;
-    margin-right: 28px;
+    margin-right: 27px;
+
+    transition-duration: .25s;
 
     border-radius: 50%;
     background: #e1e1e1 url('../img/sprite.png') no-repeat center;
-    transition-duration: 0.25s;
 }
 
 .social-btn-vk
@@ -723,7 +729,7 @@ hr.bottom
 
 .social-btn-inst
 {
-    background-position: 20px -301px;;
+    background-position: 22px -304px;
 }
 
 .icon-social:hover
@@ -748,7 +754,7 @@ hr.bottom
     text-align: center;
     text-transform: uppercase;
 
-    color: #000000;
+    color: #000;
 }
 
 .shop
@@ -989,7 +995,7 @@ legend
 
     text-transform: uppercase;
 
-    color: #000000;
+    color: #000;
 }
 
 .filters .btn
@@ -1000,15 +1006,15 @@ legend
 .filters .btn:hover,
 .paginator .btn:hover
 {
-    background-color: #e5e5e5;
     border-color: #e5e5e5;
+    background-color: #e5e5e5;
 }
 
 .filters .btn:focus,
 .paginator .btn:focus
 {
-    background-color: #d5d5d5;
     border-color: #d5d5d5;
+    background-color: #d5d5d5;
     box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, .15  );
 }
 
@@ -1027,12 +1033,12 @@ legend
 
 .sort a
 {
+    transition-duration: .25s;
     text-decoration: none;
 
     opacity: .3;
     color: #b2b2b2;
     border-bottom: 2px dotted #00ca74;
-    transition-duration: 0.25s;
 }
 
 .sort a:hover
@@ -1062,7 +1068,7 @@ legend
 
 .sort li
 {
-    /*margin-right: 43px;*/
+    margin-right: 2px;
     word-spacing: normal;
 }
 .sort-way
@@ -1100,16 +1106,14 @@ legend
 
 .sort li:first-child
 {
-    /*margin-right: 37px;*/
+    margin-right: -6px;
     opacity: 1;
 }
 
 .examples
 {
-    margin-bottom: 60px;
+    margin-bottom: 59px;
     padding-top: 46px;
-
-    
 }
 
 .site-exapmle
@@ -1120,7 +1124,6 @@ legend
 
     width: 240px;
     height: 240px;
-
 }
 
 .site-exapmle:nth-child(2n)
@@ -1148,23 +1151,20 @@ legend
 {
     position: absolute;
     top: -20px;
-    left: 10px;
-
+    left: 12px;
     width: 10px;
     height: 10px;
-
     content: '';
-
     border-radius: 50%;
-    background-color: #ffffff;
-    box-shadow: 20px 0 0 0 #ffffff,
-    40px 0 0 0 #ffffff;
+    background-color: #fff;
+    box-shadow: 17px 0 0 0 #fff, 34px 0 0 0 #fff;
 }
 
 .site-exapmle:hover::before
 {
+    transition-duration: .25s;
+
     background-color: #797979;
-    transition-duration: 0.25s;
 }
 
 .site-exapmle:nth-child(n+3)
@@ -1190,21 +1190,18 @@ legend
     top: 50%;
     left: 50%;
 
-    opacity: 0;
-    
-
     width: 180px;
     height: 180px;
     padding: 10px;
 
-    transform: scale(0.1);
+    transition-duration: .25s;
+    transform: scale(.1);
     text-align: center;
     word-spacing: normal;
 
-    color: #000000;
-    background-color: #ffffff;
-
-    transition-duration: 0.25s;
+    opacity: 0;
+    color: #000;
+    background-color: #fff;
 }
 
 .decription-buy .btn
@@ -1232,8 +1229,8 @@ legend
     line-height: 18px;
 
     overflow: hidden;
-    
-    height: 60px;
+
+    height: 58px;
     margin-top: 10px;
     margin-bottom: 5px;
 }
@@ -1248,8 +1245,9 @@ legend
 
 .site-exapmle:hover .decription-buy
 {
-    opacity: 1;
     transform: scale(1)  translate(-50%, -50%);
+
+    opacity: 1;
 }
 
 .paginator .next,
@@ -1284,8 +1282,9 @@ legend
 .paginator .active:focus
 {
     cursor: default;
+
     border-color: #e5e5e5;
-    background-color: #ffffff;
+    background-color: #fff;
 }
 
 h3,
@@ -1298,7 +1297,7 @@ legend
 
     text-transform: uppercase;
 
-    color: #000000;
+    color: #000;
 }
 
 
@@ -1316,14 +1315,13 @@ legend
 .controls
 {
     position: absolute;
-    
+    z-index: 40;
     top: 200px;
     left: 330px;
 
     width: 200px;
 
     text-align: center;
-    z-index: 40;
 }
 
 .controls label
@@ -1337,40 +1335,43 @@ legend
     cursor: pointer;
     vertical-align: middle;
 
-    border: 3px solid #ffffff;
+    border: 3px solid #fff;
     border-radius: 50%;
     background: #fff;
 }
 
-.adv-slider input[id="slide-1"]:not(:checked) ~ .controls label[for="slide-1"]:hover
+.adv-slider input[id='slide-1']:not(:checked) ~ .controls label[for='slide-1']:hover
 {
-    box-shadow: 0 0 10px -1px #222222;
-    transition-duration: 0.4s;
+    transition-duration: .4s;
+
+    box-shadow: 0 0 10px -1px #222;
 }
 
-.adv-slider input[id="slide-2"]:not(:checked) ~ .controls label[for="slide-2"]:hover
+.adv-slider input[id='slide-2']:not(:checked) ~ .controls label[for='slide-2']:hover
 {
-    box-shadow: 0 0 10px -1px #222222;
-    transition-duration: 0.4s;
+    transition-duration: .4s;
+
+    box-shadow: 0 0 10px -1px #222;
 }
 
-.adv-slider input[id="slide-3"]:not(:checked) ~ .controls label[for="slide-3"]:hover
+.adv-slider input[id='slide-3']:not(:checked) ~ .controls label[for='slide-3']:hover
 {
-    box-shadow: 0 0 10px -1px #222222;
-    transition-duration: 0.4s;
+    transition-duration: .4s;
+
+    box-shadow: 0 0 10px -1px #222;
 }
 
-.adv-slider input[id="slide-1"]:checked ~ .controls label[for="slide-1"]
-{
-    cursor: default;
-}
-
-.adv-slider input[id="slide-2"]:checked ~ .controls label[for="slide-2"]
+.adv-slider input[id='slide-1']:checked ~ .controls label[for='slide-1']
 {
     cursor: default;
 }
 
-.adv-slider input[id="slide-3"]:checked ~ .controls label[for="slide-3"]
+.adv-slider input[id='slide-2']:checked ~ .controls label[for='slide-2']
+{
+    cursor: default;
+}
+
+.adv-slider input[id='slide-3']:checked ~ .controls label[for='slide-3']
 {
     cursor: default;
 }
@@ -1378,13 +1379,17 @@ legend
 
 @keyframes slide-open
 {
-    from {
-        opacity: .5;
+    from
+    {
         transform: translateX(60%) scaleX(.1) ;
+
+        opacity: .5;
     }
-    to {
-        opacity: 1;
+    to
+    {
         transform: translateX(0) scaleX(1) ;
+
+        opacity: 1;
     }
 }
 
@@ -1393,12 +1398,12 @@ legend
 {
     from
     {
-        
         transform: translateX(0) scaleX(1) ;
     }
-    to {
+    to
+    {
         /*opacity: 0;*/
-        transform: translateX(-60%) scaleX(.1);        
+        transform: translateX(-60%) scaleX(.1);
     }
 }
 
@@ -1426,64 +1431,64 @@ legend
 
 .adv-slider input:nth-child(1):checked ~ .view-port .slide:nth-child(1)
 {
+    transition-timing-function: ease-out;
     /*top: 0;*/
     animation-name: slide-open;
     animation-duration: 1s;
+
     animation-fill-mode: both;
-    transition-timing-function: ease-out;
-
-
 }
 
 .adv-slider input:nth-child(1):checked ~ .view-port .slide:nth-child(2),
 .adv-slider input:nth-child(1):checked ~ .view-port .slide:nth-child(3)
 {
+    transition-timing-function: ease-in;
     /*top: -310px;*/
     animation-name: slide-hide;
     animation-duration: 1s;
-    animation-fill-mode: both;
-    transition-timing-function: ease-in;
 
+    animation-fill-mode: both;
 }
 
 .adv-slider input:nth-child(2):checked ~ .view-port .slide:nth-child(2)
 {
+    transition-timing-function: ease-out;
     /*top: 0;*/
     animation-name: slide-open;
     animation-duration: 1s;
+
     animation-fill-mode: both;
-    transition-timing-function: ease-out;
-
-
 }
 
 .adv-slider input:nth-child(2):checked ~ .view-port .slide:nth-child(1),
 .adv-slider input:nth-child(2):checked ~ .view-port .slide:nth-child(3)
 {
+    transition-timing-function: ease-in;
     /*top: -310px;*/
     animation-name: slide-hide;
     animation-duration: 1s;
+
     animation-fill-mode: both;
-    transition-timing-function: ease-in;
 }
 
 .adv-slider input:nth-child(3):checked ~ .view-port .slide:nth-child(3)
 {
+    transition-timing-function: ease-out;
     /*top: 0;*/
-
     animation-name: slide-open;
     animation-duration: 1s;
+
     animation-fill-mode: both;
-    transition-timing-function: ease-out;
 }
 .adv-slider input:nth-child(3):checked ~ .view-port .slide:nth-child(1),
 .adv-slider input:nth-child(3)checked ~ .view-port .slide:nth-child(2)
 {
+    transition-timing-function: ease-in;
     /*top: -310px;*/
     animation-name: slide-hide;
     animation-duration: 1s;
+
     animation-fill-mode: both;
-    transition-timing-function: ease-in;
 }
 
 
@@ -1496,17 +1501,21 @@ input:focus
 .write-us
 {
     position: absolute;
-top: -50%;
-left: 40px;
-width: 460px;
-padding: 50px 80px;
-padding-right: 90px;
-color: #000;
-background-color: #fff;
-box-shadow: 0 20px 40px 0 rgba(0, 1, 1, .75);
-transform: translateY(-50%);
-display: none;
-z-index: 70;
+    z-index: 70;
+    top: -50%;
+    left: 40px;
+
+    display: none;
+
+    width: 460px;
+    padding: 50px 80px;
+    padding-right: 90px;
+
+    transform: translateY(-50%);
+
+    color: #000;
+    background-color: #fff;
+    box-shadow: 0 20px 40px 0 rgba(0, 1, 1, .75);
 }
 
 .writer-data
@@ -1514,7 +1523,6 @@ z-index: 70;
     margin-bottom: 20px;
 
     word-spacing: 15px;
-    
 }
 
 .writer-data label
@@ -1581,7 +1589,7 @@ z-index: 70;
     font-family: 'Roboto', 'Arial', sans-serif;
     font-size: 16px;
     font-variant: medium;
-    line-height: 22px
+    line-height: 22px;
 }
 
 .write-us .btn
@@ -1623,27 +1631,26 @@ z-index: 70;
     cursor: pointer;
     -webkit-user-select: none;
        -moz-user-select: none;
+    transition-duration: .25s;
     transform: rotate(45deg);
     text-align: center;
 
-    color: #ffffff;
+    color: #fff;
     border-radius: 50%;
     background-color: #fb565a;
-    transition-duration: 0.25s;
 }
 
 
 .main-footer
 {
+    position: relative;
+
     width: 100%;
     min-width: 900px;
-    position: relative;
 }
 
 .main-footer .container
 {
-
-    
     padding: 77px 10px;
 }
 
@@ -1651,6 +1658,7 @@ z-index: 70;
 {
     position: relative;
     z-index: 800;
+
     height: 0;
     padding: 0;
 }
@@ -1658,15 +1666,15 @@ z-index: 70;
 .popup-bg
 {
     position: fixed;
+    z-index: 60;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 
-background-color: rgba(0, 0, 0, .5);
-right: 0;
-left: 0;
-top: 0;
-bottom: 0;
-z-index: 60;
-display: none;
+    display: none;
 
+    background-color: rgba(0, 0, 0, .5);
 }
 
 .popup-show
@@ -1676,31 +1684,32 @@ display: none;
 
 @keyframes show
 {
-    from 
+    from
     {
-        transform:scale(0);
+        transform: scale(0);
+
         opacity: 0;
     }
-    75% {
-        transform: scale(1.1)
+    75%
+    {
+        transform: scale(1.1);
     }
     to
     {
         transform: scale(1);
+
         opacity: 1;
     }
 }
 
 @keyframes bg-show
 {
-    from 
+    from
     {
-        
-        opacity: 0.3;
+        opacity: .3;
     }
     to
     {
-        
         opacity: 1;
     }
 }
@@ -1709,6 +1718,7 @@ display: none;
 {
     animation-name: show;
     animation-duration: .5s;
+
     animation-fill-mode: both;
 }
 
@@ -1716,25 +1726,28 @@ display: none;
 {
     animation-name: bg-show;
     animation-duration: .5s;
+
     animation-fill-mode: both;
 }
 
 .show
 {
-    display: block;
     position: static;
     top: 0;
     left: 0;
+
+    display: block;
+
     transform: translate(0, 0);
+
     box-shadow: none;
 }
 
 iframe
 {
     width: 100%;
+    border:0;
     frameborder: 0;
-
-
 }
 
 .img-order img
