@@ -1481,7 +1481,7 @@ legend
     animation-fill-mode: both;
 }
 .adv-slider input:nth-child(3):checked ~ .view-port .slide:nth-child(1),
-.adv-slider input:nth-child(3)checked ~ .view-port .slide:nth-child(2)
+.adv-slider input:nth-child(3):checked ~ .view-port .slide:nth-child(2)
 {
     transition-timing-function: ease-in;
     /*top: -310px;*/
