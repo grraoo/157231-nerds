@@ -57,7 +57,7 @@ ul
     text-decoration: none;
     text-transform: uppercase;
 
-    color: white;
+    color: #ffffff;
     transition-duration: 0.25s;
 }
 
@@ -66,6 +66,7 @@ ul
     width: 880px;
     padding: 0 10px;
     margin: 0 auto;
+
 }
 
 .main-header
@@ -185,8 +186,10 @@ ul
     text-decoration: none;
     text-transform: uppercase;
 
-    color: black;
+    color: #000000;
     transition-duration: 0.25s;
+
+    word-spacing: normal;
 }
 
 .main-navigation a:hover,
@@ -199,7 +202,7 @@ ul
 .cart a:active
 {
     opacity:0.4;
-    color: black;
+    color: #000000;
 }
 
 
@@ -286,7 +289,7 @@ ul
 .slide-text
 {
     font-size: 16px;
-
+    line-height: 22px;
     width: 500px;
     padding: 30px 0;
 }
@@ -309,6 +312,7 @@ ul
 .slide .btn
 {
     font-size: 12px;
+    line-height: 18px;
     font-weight: 700;
 
     display: block;
@@ -478,12 +482,13 @@ hr.bottom
     font-weight: 400;
     line-height: 30px;
 
-    color: black;
+    color: #000000;
 }
 
 .feature
 {
     font-size: 16px;
+    line-height: 22px;
 
     margin-top: 12px;
     margin-bottom: 43px;
@@ -532,6 +537,7 @@ hr.bottom
 .since div
 {
     font-size: 16px;
+    line-height: 22px;
 
     position: relative;
     z-index: 10;
@@ -634,7 +640,7 @@ hr.bottom
 
     position: absolute;
     top: 88px;
-    left: 159px;
+    left: 10px;
 
     width: 210px;
     padding: 20px;
@@ -646,6 +652,7 @@ hr.bottom
 .contacts h3
 {
     font-size: 16px;
+    line-height: 30px;
     font-weight: 400;
     font-variant: medium;
 
@@ -688,6 +695,7 @@ hr.bottom
 .footer-promo p
 {
     font-size: 16px;
+    line-height: 22px;
 
     margin-top: 3px;
 }
@@ -739,7 +747,7 @@ hr.bottom
     text-align: center;
     text-transform: uppercase;
 
-    color: black;
+    color: #000000;
 }
 
 .shop
@@ -750,6 +758,7 @@ hr.bottom
 .filters
 {
     font-size: 16px;
+    line-height: 22px;
 
     width: 240px;
     margin-right: 80px;
@@ -760,7 +769,7 @@ hr.bottom
 .filters fieldset
 {
     margin: 0;
-    margin-bottom: 43px;
+    margin-bottom: 45px;
     padding: 0;
 
     border: 0;
@@ -833,7 +842,8 @@ legend
 
 .price-controls label
 {
-    font-size: 16px;
+    font-size: 20px;
+    line-height: 24px;
 
     display: inline-block;
 
@@ -849,10 +859,11 @@ legend
 {
     font-family: 'Roboto', 'Arial', sans-serif;
     font-size: 16px;
+    line-height: 22px;
 
     width: 60px;
     margin-left: 10px;
-    padding: 8px 10px;
+    padding: 7px 10px;
 
     text-align: center;
 
@@ -921,7 +932,6 @@ legend
     font-weight: normal;
     font-style: normal;
     font-variant: normal;
-    line-height: 20px;
 
     position: absolute;
     top: 0;
@@ -949,7 +959,6 @@ legend
     font-weight: normal;
     font-style: normal;
     font-variant: normal;
-    line-height: 20px;
 
     position: absolute;
     top: 0;
@@ -979,7 +988,7 @@ legend
 
     text-transform: uppercase;
 
-    color: black;
+    color: #000000;
 }
 
 .filters .btn
@@ -1096,10 +1105,10 @@ legend
 
 .examples
 {
-    margin-bottom: 45px;
+    margin-bottom: 60px;
     padding-top: 46px;
 
-    word-spacing: 80px;
+    
 }
 
 .site-exapmle
@@ -1111,6 +1120,11 @@ legend
     width: 240px;
     height: 240px;
 
+}
+
+.site-exapmle:nth-child(2n)
+{
+    margin-left: 80px;
 }
 
 .site-exapmle::before
@@ -1141,9 +1155,9 @@ legend
     content: '';
 
     border-radius: 50%;
-    background-color: white;
-    box-shadow: 20px 0 0 0 white,
-    40px 0 0 0 white;
+    background-color: #ffffff;
+    box-shadow: 20px 0 0 0 #ffffff,
+    40px 0 0 0 #ffffff;
 }
 
 .site-exapmle:hover::before
@@ -1154,7 +1168,7 @@ legend
 
 .site-exapmle:nth-child(n+3)
 {
-    margin-top: 100px;
+    margin-top: 110px;
 }
 
 .examples::after
@@ -1186,8 +1200,8 @@ legend
     text-align: center;
     word-spacing: normal;
 
-    color: black;
-    background-color: white;
+    color: #000000;
+    background-color: #ffffff;
 
     transition-duration: 0.25s;
 }
@@ -1270,7 +1284,7 @@ legend
 {
     cursor: default;
     border-color: #e5e5e5;
-    background-color: white;
+    background-color: #ffffff;
 }
 
 h3,
@@ -1283,7 +1297,7 @@ legend
 
     text-transform: uppercase;
 
-    color: black;
+    color: #000000;
 }
 
 
@@ -1302,7 +1316,7 @@ legend
 {
     position: absolute;
     
-    top: 206px;
+    top: 200px;
     left: 330px;
 
     width: 200px;
@@ -1317,12 +1331,12 @@ legend
 
     width: 4px;
     height: 4px;
-    margin: 0 6px;
+    margin: 0 5px;
 
     cursor: pointer;
     vertical-align: middle;
 
-    border: 3px solid white;
+    border: 3px solid #ffffff;
     border-radius: 50%;
     background: #fff;
 }
@@ -1611,7 +1625,7 @@ z-index: 70;
     transform: rotate(45deg);
     text-align: center;
 
-    color: white;
+    color: #ffffff;
     border-radius: 50%;
     background-color: #fb565a;
     transition-duration: 0.25s;
@@ -1630,6 +1644,14 @@ z-index: 70;
 
     min-height: 85px;
     padding: 77px 10px;
+}
+
+.on-map
+{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 800;
 }
 
 .popup-bg
@@ -1696,10 +1718,22 @@ display: none;
     animation-fill-mode: both;
 }
 
+.show
+{
+    display: block;
+    position: static;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    box-shadow: none;
+}
+
 iframe
 {
     width: 100%;
     frameborder: 0;
+
+
 }
 
 .img-order img
@@ -1712,4 +1746,9 @@ iframe
 {
     width: 240px;
     height: 240px;
+}
+
+input
+{
+    transition-duration: 0.25s;
 }
