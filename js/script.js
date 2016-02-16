@@ -9,21 +9,21 @@ var form = document.querySelector(".contacts .btn");
         event.preventDefault();
         popup.classList.add("popup-show");
         popup.classList.add("form-show");
-        popupBg.classList.toggle("popup-show");
+        popupBg.classList.add("popup-show");
         popupBg.classList.add("bg-show");
         login.focus();
       });
 
       close.addEventListener("click", function(event) {
         event.preventDefault();
-        popup.classList.toggle("popup-show");
-        popupBg.classList.toggle("popup-show");
+        popup.classList.remove("popup-show");
+        popupBg.classList.remove("popup-show");
       });
 
       popupBg.addEventListener("click", function(event) {
         event.preventDefault();
-        popup.classList.toggle("popup-show");
-        popupBg.classList.toggle("popup-show");
+        popup.classList.remove("popup-show");
+        popupBg.classList.remove("popup-show");
       });
 
       window.addEventListener("keydown", function(event) {
