@@ -15,32 +15,31 @@
           <ul>
             <li><a href="index.html">Студия</a></li>
             <li><a href="#">Клиенты</a></li>
-            <li><a href="catalog.html">Магазин</a></li>
-            <li><span class="current-page" href="#">Контакты</span></li>
+            <li><a class="current-page" href="#">Магазин</a></li>
+            <li><a href="#">Контакты</a></li>
           </ul>
         </nav>
-        <div  class="cart"><a href="#">Корзина</a></div>
+      <div  class="cart">
+        <a href="#">Корзина</a>
       </div>
     </header>
-
-          <form class="write-us show container" action="htmlacademy.ru" method="get">
-            <div class="writer-data">
-            <div class="write-name">
-              <label>Ваше имя:
-              <input type="text" id="write-name" name="login" placeholder="Представьтесь, пожалуйста" required></label>
-            </div>
-            <div class="write-mail">
-              <label>Ваш e-mail:
-              <input type="email" id="write-mail" name="mail" placeholder="Для отправки ответа" required>    </label>
-              </div>
-            </div>
-            <label>Текст письма:
-            <textarea rows="4" id="write-letter" name="letter" placeholder="В свободной форме" required></textarea></label>
-            <button class="btn" type="submit">ОТПРАВИТЬ</button>
-            
-          </form>
-
-<footer class="main-footer">
+    <form class="write-us show container" action="htmlacademy.ru" method="get">
+      <div class="writer-data">
+        <div class="write-name">
+          <label>Ваше имя:
+          <input type="text" id="write-name" name="login" placeholder="Представьтесь, пожалуйста" required></label>
+        </div>
+        <div class="write-mail">
+          <label>Ваш e-mail:
+          <input type="email" id="write-mail" name="mail" placeholder="Для отправки ответа" required>    </label>
+          </div>
+      </div>
+      <label>Текст письма:
+        <textarea rows="4" id="write-letter" name="letter" placeholder="В свободной форме" required></textarea>
+      </label>
+      <a href="index.html" class="btn" type="submit">ОТПРАВИТЬ</a>
+    </form>
+    <footer class="main-footer">
     <div class="container">
         <section class="footer-social">
           <a href="#"><div class="icon-social social-btn-vk"></div></a>
@@ -53,3 +52,5 @@
         </section>
       </div>
     </footer>
+  </body>
+</html>

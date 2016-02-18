@@ -10,7 +10,7 @@
   <body>
   	<header class="main-header">
       <div class="container">
-       <a class="main-logo" href="index.html"><img  src="img/main-logo1.svg" width="139" height="56" alt="main-logo"></a>
+        <a class="main-logo" href="index.html"><img  src="img/main-logo1.svg" width="139" height="56" alt="main-logo"></a>
         <nav class="main-navigation">
           <ul>
             <li><a href="index.html">Студия</a></li>
@@ -19,8 +19,10 @@
             <li><a href="#">Контакты</a></li>
           </ul>
         </nav>
-        <div  class="cart"><a href="#">Корзина</a></div>
-        <div class="shop-header">Добро пожаловать в магазин<br>
+      <div  class="cart">
+        <a href="#">Корзина</a>
+      </div>
+      <div class="shop-header">Добро пожаловать в магазин<br>
         готовых макетов</div>
       </div>
     </header>
@@ -29,18 +31,16 @@
       <form class="filters" action="form.php" method="GET">
         <fieldset class="range">
           <legend>Стоимость:</legend>
-            <div class="ranger">
-              <div class="scale">
-            <div class="bar"></div>
-          </div>
-          <div class="toggle toggle-min"></div>
-          <div class="toggle toggle-max"></div>
+          <div class="ranger">
+            <div class="scale">
+              <div class="bar"></div>
             </div>
-            <div class="price-controls">
-          <label class="min-range" for="min-range">от<input class="min-max" type="text" value="0" id="min-range"></label>
-           
-          <label class="max-range" for="max-range">до<input class="min-max" type="text" value="15000" id="max-range"></label>
-          
+            <div class="toggle toggle-min"></div>
+            <div class="toggle toggle-max"></div>
+          </div>
+          <div class="price-controls">
+            <label class="min-range" for="min-range">от<input class="min-max" type="text" value="0" id="min-range"></label>
+            <label class="max-range" for="max-range">до<input class="min-max" type="text" value="15000" id="max-range"></label>
           </div>
         </fieldset>
         <fieldset class="grid">
@@ -89,9 +89,8 @@
       </form>
       <section class="catalog">
         <div class="sort">
-          
           <ul>
-          <li><h4>СОРТИРОВАТЬ:</h4></li>
+            <li><h4>СОРТИРОВАТЬ:</h4></li>
             <li><a href="#">ПО&nbsp;ЦЕНЕ</a></li>
             <li><a href="#">ПО&nbsp;ТИПУ</a></li>
             <li><a href="#">ПО&nbsp;ФУНКЦИОНАЛУ</a></li>
@@ -103,46 +102,52 @@
         </div>
         <div class="examples">
           <div class="site-exapmle"><img src="img/examp-1.jpg" width="240" height="240" alt="site-scr">
-              <div class="decription-buy">
+            <div class="decription-buy">
               <h3>Aviator</h3>
-              <div class="description"><p>Одностраничный макет с авторским дизайном</p></div>
+              <div class="description"><p>Одностраничный макет с авторским дизайном</p>
+              </div>
               <button class="btn">8000 р.</button>
             </div>
           </div>
           <div class="site-exapmle"><img src="img/examp-2.jpg" width="240" height="240" alt="site-scr">
-              <div class="decription-buy">
+            <div class="decription-buy">
               <h3>SUNSET</h3>
-              <div class="description"><p>Интернет-магазин с&nbsp;личным кабинетом</p></div>
+              <div class="description"><p>Интернет-магазин с&nbsp;личным кабинетом</p>
+              </div>
               <button class="btn">10000 р.</button>
             </div>
           </div>
           <div class="site-exapmle"><img src="img/examp-3.jpg" width="240" height="240" alt="site-scr">
-              <div class="decription-buy">
+            <div class="decription-buy">
               <h3>Aviator</h3>
-              <div class="description"><p>Одностраничный макет с авторским дизайном</p></div>
+              <div class="description"><p>Одностраничный макет с авторским дизайном</p>
+              </div>
               <button class="btn">8000 р.</button>
             </div>
           </div>
           <div class="site-exapmle"><img src="img/examp-4.jpg" width="240" height="240" alt="site-scr">
-              <div class="decription-buy">
+            <div class="decription-buy">
               <h3>Aviator</h3>
-              <div class="description"><p>Одностраничный макет с авторским дизайном</p></div>
+              <div class="description"><p>Одностраничный макет с авторским дизайном</p>
+              </div>
               <button class="btn">8000 р.</button>
             </div>
           </div>
           <div class="site-exapmle"><img src="img/examp-5.jpg" width="240" height="240" alt="site-scr">
-              <div class="decription-buy">
+            <div class="decription-buy">
               <h3>Aviator</h3>
-              <div class="description"><p>Одностраничный макет с авторским дизайном</p></div>
+              <div class="description"><p>Одностраничный макет с авторским дизайном</p>
+              </div>
               <button class="btn">8000 р.</button>
             </div>
           </div>
           <div class="site-exapmle"><img src="img/examp-6.jpg" width="240" height="240" alt="site-scr">
-             <div class="decription-buy">
+           <div class="decription-buy">
               <h3>Aviator</h3>
-              <div class="description"><p>Одностраничный макет с авторским дизайном</p></div>
+              <div class="description"><p>Одностраничный макет с авторским дизайном</p>
+              </div>
               <button class="btn">8000 р.</button>
-            </div> 
+            </div>
           </div>
         </div>
         <div class="paginator">
@@ -158,7 +163,7 @@
     </section>
     </main>
     <footer class="main-footer">
-    <div class="container on-map">
+      <div class="container on-map">
         <article class="contacts">
           <h3>NЁRDS DESIGN STUDIO</h3>
           191186, Санкт-Петербург, <br>
@@ -167,13 +172,13 @@
           <a class="btn" href="contacts.html">напишите нам</a>
           <form class="write-us" action="htmlacademy.ru" method="get">
             <div class="writer-data">
-            <div class="write-name">
-              <label>Ваше имя:
-              <input type="text" id="write-name" name="login" placeholder="Представьтесь, пожалуйста" required></label>
-            </div>
-            <div class="write-mail">
-              <label>Ваш e-mail:
-              <input type="email" id="write-mail" name="mail" placeholder="Для отправки ответа" required>    </label>
+              <div class="write-name">
+                <label>Ваше имя:
+                <input type="text" id="write-name" name="login" placeholder="Представьтесь, пожалуйста" required></label>
+              </div>
+              <div class="write-mail">
+               <label>Ваш e-mail:
+                <input type="email" id="write-mail" name="mail" placeholder="Для отправки ответа" required>    </label>
               </div>
             </div>
             <label>Текст письма:
@@ -181,13 +186,11 @@
             <button class="btn" type="submit">ОТПРАВИТЬ</button>
             <div class="close">+</div>
           </form>
+          <div class="popup-bg"></div>
         </article>
       </div>
       <section class="map">
-
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1121.6771897920714!2d30.320681002610197!3d59.938754892403765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1455441016834"   height="416" style="border:0" allowfullscreen></iframe>
-      
-        <!--img class="pointer" src="img/map-pointer.png" width="231" height="190" alt="pointer"-->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1121.6771897920714!2d30.320681002610197!3d59.938754892403765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1455441016834"   height="416" allowfullscreen></iframe>
       </section>
       <div class="container">
         <section class="footer-social">
@@ -202,7 +205,7 @@
       </div>
     </footer>
     <div class="popup-bg"></div>
-      <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
   </body>
  </html>
  
