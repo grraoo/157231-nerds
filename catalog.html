@@ -1,215 +1,235 @@
 <!DOCTYPE html>
 <html lang="ru">
-	<head>
-		<meta charset="utf-8">
-		<title>NЁRDS DESIGN STUDIO</title>
-		<link rel="stylesheet" type="text/css" href="css/normalize.css">
-		<link rel="stylesheet" type="text/css" href="css/min.css">
-		<link href="https://fonts.googleapis.com/css?family=Roboto:500,300" rel="stylesheet" type="text/css">
-	</head>
-	<body>
-		<header class="main-header">
-			<div class="container">
-				<a class="main-logo" href="index.html"><img	src="img/main-logo1.svg" width="139" height="56" alt="main-logo"></a>
-				<nav class="main-navigation">
-					<ul>
-						<li><a href="index.html">Студия</a></li>
-						<li><a href="#">Клиенты</a></li>
-						<li><a class="current-page" href="#">Магазин</a></li>
-						<li><a href="#">Контакты</a></li>
-					</ul>
-				</nav>
-			<div	class="cart">
-				<a href="#">Корзина</a>
-			</div>
-			<div class="shop-header">Добро пожаловать в магазин<br>
-				готовых макетов</div>
-			</div>
-		</header>
-		<main	class="container">
-		<section class="shop">
-			<form class="filters" action="form.php" method="GET">
-				<fieldset class="range">
-					<legend>Стоимость:</legend>
-					<div class="ranger">
-						<div class="scale">
-							<div class="bar"></div>
-						</div>
-						<div class="toggle toggle-min"></div>
-						<div class="toggle toggle-max"></div>
-					</div>
-					<div class="price-controls">
-						<label class="min-range" for="min-range">от<input class="min-max" type="text" value="0" id="min-range"></label>
-						<label class="max-range" for="max-range">до<input class="min-max" type="text" value="15000" id="max-range"></label>
-					</div>
-				</fieldset>
-				<fieldset class="grid">
-					<legend>Сетка:</legend>
-					<ul>
-						<li>
-						<input type="radio" name="grid-type" id="adaptive" checked>
-						<label for="adaptive">Адаптивная</label>
-						</li>
-						<li>
-						<input type="radio" name="grid-type" id="fix">
-						<label for="fix">Фиксированная</label>
-						</li>
-						<li>
-						<input type="radio" name="grid-type" id="rubber">
-						<label for="rubber">Резиновая</label>
-						</li>	
-					</ul>
-				</fieldset>
-				<fieldset class="features">
-					<legend>ОСОБЕННОСТИ:</legend>
-					<ul>
-						<li>
-						<input type="checkbox" id="slider" checked>
-						<label for="slider">Слайдер</label>
-						</li>
-						<li>
-						<input type="checkbox" id="plusses">
-						<label for="plusses">Блок преимуществ</label>
-						</li>
-						<li>
-						<input type="checkbox" id="news" checked>
-						<label for="news">Новости</label>
-						</li>
-						<li>
-						<input type="checkbox" id="gallery">
-						<label for="gallery">Галерея</label>
-						</li>
-						<li>
-						<input type="checkbox" id="cart">
-						<label for="cart">Корзина</label>
-						</li>
-					</ul>
-				</fieldset>
-				<button class="btn" type="submit">Показать</button>
-			</form>
-			<section class="catalog">
-				<div class="sort">
-					<ul>
-						<li><h4>СОРТИРОВАТЬ:</h4></li>
-						<li><a href="#">ПО&nbsp;ЦЕНЕ</a></li>
-						<li><a href="#">ПО&nbsp;ТИПУ</a></li>
-						<li><a href="#">ПО&nbsp;ФУНКЦИОНАЛУ</a></li>
-					</ul>
-					<div class="sort-way">
-						<a href="#" class="down">▼</a>
-						<a href="#" class="up">▲</a>
-					</div>
-				</div>
-				<div class="examples">
-					<div class="site-exapmle"><img src="img/examp-1.jpg" width="240" height="240" alt="site-scr">
-						<div class="decription-buy">
-							<h3>Aviator</h3>
-							<div class="description"><p>Одностраничный макет с авторским дизайном</p>
-							</div>
-							<button class="btn">8000 р.</button>
-						</div>
-					</div>
-					<div class="site-exapmle"><img src="img/examp-2.jpg" width="240" height="240" alt="site-scr">
-						<div class="decription-buy">
-							<h3>SUNSET</h3>
-							<div class="description"><p>Интернет-магазин с&nbsp;личным кабинетом</p>
-							</div>
-							<button class="btn">10000 р.</button>
-						</div>
-					</div>
-					<div class="site-exapmle"><img src="img/examp-3.jpg" width="240" height="240" alt="site-scr">
-						<div class="decription-buy">
-							<h3>Aviator</h3>
-							<div class="description"><p>Одностраничный макет с авторским дизайном</p>
-							</div>
-							<button class="btn">8000 р.</button>
-						</div>
-					</div>
-					<div class="site-exapmle"><img src="img/examp-4.jpg" width="240" height="240" alt="site-scr">
-						<div class="decription-buy">
-							<h3>Aviator</h3>
-							<div class="description"><p>Одностраничный макет с авторским дизайном</p>
-							</div>
-							<button class="btn">8000 р.</button>
-						</div>
-					</div>
-					<div class="site-exapmle"><img src="img/examp-5.jpg" width="240" height="240" alt="site-scr">
-						<div class="decription-buy">
-							<h3>Aviator</h3>
-							<div class="description"><p>Одностраничный макет с авторским дизайном</p>
-							</div>
-							<button class="btn">8000 р.</button>
-						</div>
-					</div>
-					<div class="site-exapmle"><img src="img/examp-6.jpg" width="240" height="240" alt="site-scr">
-					 <div class="decription-buy">
-							<h3>Aviator</h3>
-							<div class="description"><p>Одностраничный макет с авторским дизайном</p>
-							</div>
-							<button class="btn">8000 р.</button>
-						</div>
-					</div>
-				</div>
-				<div class="paginator">
-					<ul>
-						<li><a class="btn prev" href="#">Предыдущая</a></li>
-						<li class="btn num active">1</li>
-						<li><a class="btn num" href="#">2</a></li>
-						<li><a class="btn num" href="#">3</a></li>
-						<li><a class="btn next" href="#">СЛЕДУЮЩАЯ</a></li>
-					</ul>
-				</div>
-			</section>
-		</section>
-		</main>
-		<footer class="main-footer">
-			<div class="container on-map">
-				<article class="contacts">
-					<h3>NЁRDS DESIGN STUDIO</h3>
-					<div class="contacts-addres">
-					191186, Санкт-Петербург, <br>
-					ул. Б. Конюшенная, д. 19/8
-					</div>
-					<div class="contacts-phone">
-					тел. +7 (812) 275-75-75
-					</div>
-					<a class="btn" href="contacts.html">напишите нам</a>
-					<form class="write-us" action="htmlacademy.ru" method="get">
-						<div class="writer-data">
-							<div class="write-name">
-								<label>Ваше имя:
-								<input type="text" id="write-name" name="login" placeholder="Представьтесь, пожалуйста" required></label>
-							</div>
-							<div class="write-mail">
-							 <label>Ваш e-mail:
-								<input type="email" id="write-mail" name="mail" placeholder="Для отправки ответа" required>		</label>
-							</div>
-						</div>
-						<label>Текст письма:
-						<textarea rows="4" id="write-letter" name="letter" placeholder="В свободной форме" required></textarea></label>
-						<button class="btn" type="submit">ОТПРАВИТЬ</button>
-						<div class="close">+</div>
-					</form>
-					<div class="popup-bg"></div>
-				</article>
-			</div>
-			<section class="map">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1121.6771897920714!2d30.320681002610197!3d59.938754892403765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1455441016834"	 height="416" allowfullscreen></iframe>
-			</section>
-			<div class="container">
-				<section class="footer-social">
-					<a href="#"><div class="icon-social social-btn-vk"></div></a>
-					<a href="#"><div class="icon-social social-btn-fb"></div></a>
-					<a href="#"><div class="icon-social social-btn-inst"></div></a>
-				</section>
-				<section class="footer-promo">
-					<b>Давайте дружить, это выгодно!</b>
-					<p>Скидка 10% для друзей из социальных сетей.</p>
-				</section>
-			</div>
-		</footer>
-		<div class="popup-bg"></div>
-		<script type="text/javascript" src="js/min.js"></script>
-	</body>
- </html>
- 
+  <head>
+    <meta charset="utf-8">
+    <title>NЁRDS DESIGN STUDIO</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:500,300" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <a class="main-logo" href="index.html"><img	src="img/main-logo1.svg" width="139" height="56" alt="main-logo"></a>
+        <nav class="main-navigation">
+          <ul>
+            <li><a href="index.html">Студия</a></li>
+            <li><a href="#">Клиенты</a></li>
+            <li><a class="current-page" href="#">Магазин</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+        <div	class="cart">
+          <a href="#">Корзина</a>
+        </div>
+        <div class="shop-header">Добро пожаловать в магазин<br>
+          готовых макетов
+        </div>
+      </div>
+    </header>
+    <main	class="container">
+      <section class="shop">
+        <form class="filters" action="form.php" method="GET">
+          <fieldset class="range">
+            <legend>Стоимость:</legend>
+            <div class="ranger">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="toggle toggle-min"></div>
+              <div class="toggle toggle-max"></div>
+            </div>
+            <div class="price-controls">
+              <label class="min-range" for="min-range">от<input class="min-max" type="text" value="0" id="min-range"></label>
+              <label class="max-range" for="max-range">до<input class="min-max" type="text" value="15000" id="max-range"></label>
+            </div>
+          </fieldset>
+          <fieldset class="grid">
+            <legend>Сетка:</legend>
+            <ul>
+              <li>
+                <input type="radio" name="grid-type" id="adaptive" checked>
+                <label for="adaptive">Адаптивная</label>
+              </li>
+              <li>
+                <input type="radio" name="grid-type" id="fix">
+                <label for="fix">Фиксированная</label>
+              </li>
+              <li>
+                <input type="radio" name="grid-type" id="rubber">
+                <label for="rubber">Резиновая</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="features">
+            <legend>ОСОБЕННОСТИ:</legend>
+            <ul>
+              <li>
+                <input type="checkbox" id="slider" checked>
+                <label for="slider">Слайдер</label>
+              </li>
+              <li>
+                <input type="checkbox" id="plusses">
+                <label for="plusses">Блок преимуществ</label>
+              </li>
+              <li>
+                <input type="checkbox" id="news" checked>
+                <label for="news">Новости</label>
+              </li>
+              <li>
+                <input type="checkbox" id="gallery">
+                <label for="gallery">Галерея</label>
+              </li>
+              <li>
+                <input type="checkbox" id="cart">
+                <label for="cart">Корзина</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="btn" type="submit">Показать</button>
+        </form>
+        <section class="catalog">
+          <div class="sort">
+            <ul>
+              <li>
+                <h4>СОРТИРОВАТЬ:</h4>
+              </li>
+              <li><a href="#">ПО&nbsp;ЦЕНЕ</a></li>
+              <li><a href="#">ПО&nbsp;ТИПУ</a></li>
+              <li><a href="#">ПО&nbsp;ФУНКЦИОНАЛУ</a></li>
+            </ul>
+            <div class="sort-way">
+              <a href="#" class="down">▼</a>
+              <a href="#" class="up">▲</a>
+            </div>
+          </div>
+          <div class="examples">
+            <div class="site-exapmle">
+              <img src="img/examp-1.jpg" width="240" height="240" alt="site-scr">
+              <div class="decription-buy">
+                <h3>Aviator</h3>
+                <div class="description">
+                  <p>Одностраничный макет с авторским дизайном</p>
+                </div>
+                <button class="btn">8000 р.</button>
+              </div>
+            </div>
+            <div class="site-exapmle">
+              <img src="img/examp-2.jpg" width="240" height="240" alt="site-scr">
+              <div class="decription-buy">
+                <h3>SUNSET</h3>
+                <div class="description">
+                  <p>Интернет-магазин с&nbsp;личным кабинетом</p>
+                </div>
+                <button class="btn">10000 р.</button>
+              </div>
+            </div>
+            <div class="site-exapmle">
+              <img src="img/examp-3.jpg" width="240" height="240" alt="site-scr">
+              <div class="decription-buy">
+                <h3>Aviator</h3>
+                <div class="description">
+                  <p>Одностраничный макет с авторским дизайном</p>
+                </div>
+                <button class="btn">8000 р.</button>
+              </div>
+            </div>
+            <div class="site-exapmle">
+              <img src="img/examp-4.jpg" width="240" height="240" alt="site-scr">
+              <div class="decription-buy">
+                <h3>Aviator</h3>
+                <div class="description">
+                  <p>Одностраничный макет с авторским дизайном</p>
+                </div>
+                <button class="btn">8000 р.</button>
+              </div>
+            </div>
+            <div class="site-exapmle">
+              <img src="img/examp-5.jpg" width="240" height="240" alt="site-scr">
+              <div class="decription-buy">
+                <h3>Aviator</h3>
+                <div class="description">
+                  <p>Одностраничный макет с авторским дизайном</p>
+                </div>
+                <button class="btn">8000 р.</button>
+              </div>
+            </div>
+            <div class="site-exapmle">
+              <img src="img/examp-6.jpg" width="240" height="240" alt="site-scr">
+              <div class="decription-buy">
+                <h3>Aviator</h3>
+                <div class="description">
+                  <p>Одностраничный макет с авторским дизайном</p>
+                </div>
+                <button class="btn">8000 р.</button>
+              </div>
+            </div>
+          </div>
+          <div class="paginator">
+            <ul>
+              <li><a class="btn prev" href="#">Предыдущая</a></li>
+              <li class="btn num active">1</li>
+              <li><a class="btn num" href="#">2</a></li>
+              <li><a class="btn num" href="#">3</a></li>
+              <li><a class="btn next" href="#">СЛЕДУЮЩАЯ</a></li>
+            </ul>
+          </div>
+        </section>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <div class="container on-map">
+        <article class="contacts">
+          <h3>NЁRDS DESIGN STUDIO</h3>
+          <div class="contacts-addres">
+            191186, Санкт-Петербург, <br>
+            ул. Б. Конюшенная, д. 19/8
+          </div>
+          <div class="contacts-phone">
+            тел. +7 (812) 275-75-75
+          </div>
+          <a class="btn" href="contacts.html">напишите нам</a>
+          <form class="write-us" action="htmlacademy.ru" method="get">
+            <div class="writer-data">
+              <div class="write-name">
+                <label>Ваше имя:
+                <input type="text" id="write-name" name="login" placeholder="Представьтесь, пожалуйста" required></label>
+              </div>
+              <div class="write-mail">
+                <label>Ваш e-mail:
+                <input type="email" id="write-mail" name="mail" placeholder="Для отправки ответа" required>		</label>
+              </div>
+            </div>
+            <label>Текст письма:
+            <textarea rows="4" id="write-letter" name="letter" placeholder="В свободной форме" required></textarea></label>
+            <button class="btn" type="submit">ОТПРАВИТЬ</button>
+            <div class="close">+</div>
+          </form>
+          <div class="popup-bg"></div>
+        </article>
+      </div>
+      <section class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1121.6771897920714!2d30.320681002610197!3d59.938754892403765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1455441016834"	 height="416" allowfullscreen></iframe>
+      </section>
+      <div class="container">
+        <section class="footer-social">
+          <a href="#">
+            <div class="icon-social social-btn-vk"></div>
+          </a>
+          <a href="#">
+            <div class="icon-social social-btn-fb"></div>
+          </a>
+          <a href="#">
+            <div class="icon-social social-btn-inst"></div>
+          </a>
+        </section>
+        <section class="footer-promo">
+          <b>Давайте дружить, это выгодно!</b>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </section>
+      </div>
+    </footer>
+    <div class="popup-bg"></div>
+    <script type="text/javascript" src="js/min.js"></script>
+  </body>
+</html>
